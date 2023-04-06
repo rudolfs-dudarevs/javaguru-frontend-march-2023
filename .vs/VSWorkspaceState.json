@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\1-nodarbiba",
+    "\\1-nodarbiba\\lekcija",
+    "\\1-nodarbiba\\lekcija\\html-boilerplate",
+    "\\1-nodarbiba\\uzdevumi",
+    "\\1-nodarbiba\\uzdevumi\\SandisAndrucis"
   ],
-  "SelectedNode": "\\C:\\Repositories",
   "PreviewInSolutionExplorer": false
 }
