@@ -48,6 +48,43 @@ main {
     box 8 - background-color: cyan;
 
     LEVEL 5
-    box 7 - background-color: green;
-    box 8 - background-color: deeppink;
+    box 9 - background-color: green;
+    box 10 - background-color: deeppink;
 */
+
+/*LEVEL 1*/
+.box{
+  background-color: blueviolet;
+}
+
+/*LEVEL 2*/
+.primary-box{
+  background-color: crimson;
+}
+.secondary-box{
+  background-color: chartreuse;
+}
+
+/*LEVEL 3*/
+.special-box{
+  background-color: hotpink;
+}
+.secondary-box.special-box {
+  background-color: coral
+  ;
+}
+
+/*LEVEL4 */
+.special-row .primary-box{
+  background-color: yellowgreen;
+}
+.special-row .secondary-box{
+  background-color: cyan;
+}
+/*LEVEL 5*/
+.special-row .special-box{
+  background-color: green;
+}
+.special-row .secondary-box.special-box{
+  background-color:deeppink ;
+}
