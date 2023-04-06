@@ -1,30 +1,30 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .row {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    font-weight: bold;
-    line-height: 100px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  font-weight: bold;
+  line-height: 100px;
 }
 
 /* 
@@ -51,43 +51,3 @@ main {
     box 7 - background-color: green;
     box 8 - background-color: deeppink;
 */
-
-/* 1. Līmenis */
-.box{
-    background-color: blueviolet;
-}
-
-
-/* 2. Līmenis */
-.primary-box{
-    background-color: crimson;
-}
-.secondary-box{
-    background-color: chartreuse;
-}
-
-
-/* 3. Līmenis */
-.primary-box.special-box{
-    background-color: hotpink;
-}
-.secondary-box.special-box{
-    background-color: coral;
-}
-
-
-/* 4. Līmenis */
-.special-row .primary-box{
-    background-color: yellowgreen;
-}
-.special-row .secondary-box{
-    background-color: cyan;
-}
-
-/* 5. Līmenis */
-.special-row .primary-box.special-box{
-    background-color: green;
-}
-.special-row .secondary-box.special-box{
-    background-color: deeppink;
-}
