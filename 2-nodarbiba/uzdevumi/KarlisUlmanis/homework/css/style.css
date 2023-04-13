@@ -1,16 +1,22 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
 }
 main{
     width: 360px;
     margin: auto;
     text-align: center;
 }
+
+.title {
+    margin-top: 50;
+}
+
 .container{
+    position: relative;
     width: 300px;
     height: 300px;
     border: 3px solid black;
@@ -27,9 +33,9 @@ main{
     line-height: 100px;
     top: 20px;
     left: 50px;
-    transition: all 0.9s linear;
+    transition: all 4s linear;
 }
-#action-btn{
+#action-btn, #action-btn-sometimes, #action-btn-position{
     width: 100px;
     height: 50px;
     border: none;
@@ -39,4 +45,16 @@ main{
     cursor: pointer;
     color: white;
     background-color:gray;
+}
+
+#action-el-sometimes {
+    background-color: transparent;
+    width: 296px;
+    height: 296px;
+}
+
+#action-el-position {
+    background-color: beige;
+    width: 150px;
+    height: 150px;
 }
