@@ -27,6 +27,42 @@ main {
   line-height: 100px;
 }
 
+.row:first-of-type .box {
+  background-color: blueviolet;
+}
+
+.box.primary-box {
+  background-color: crimson;
+}
+
+.box.secondary-box {
+  background-color: chartreuse;
+}
+
+.box.primary-box.special-box {
+  background-color: hotpink;
+}
+
+.box.secondary-box.special-box {
+  background-color: coral;
+}
+
+.row.special-row .box.primary-box {
+  background-color: yellowgreen;
+}
+
+.row.special-row .box.secondary-box {
+  background-color: cyan;
+}
+
+.row.special-row .box.primary-box.special-box {
+  background-color: green;
+}
+
+.row.special-row .box.secondary-box.special-box {
+  background-color: deeppink;
+}
+
 /* 
     Izveidojam selektorus ar atbilstošu specifitāti,
     lai visu kastīšu krāsa atbilstu attēlā redzamajai:
