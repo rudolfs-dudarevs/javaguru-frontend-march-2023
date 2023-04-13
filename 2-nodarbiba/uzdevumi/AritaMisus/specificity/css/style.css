@@ -27,6 +27,45 @@ main {
   line-height: 100px;
 }
 
+/* Homework */
+
+.row .box {
+  background-color: blueviolet;
+}
+
+.row .box.primary-box {
+  background-color: crimson;
+}
+
+.row .box.secondary-box {
+  background-color: chartreuse;
+}
+
+.row .box.primary-box.special-box {
+  background-color: hotpink;
+}
+
+.row .box.secondary-box.special-box {
+  background-color: coral;
+}
+
+.row.special-row .box.primary-box {
+  background-color: yellowgreen;
+}
+
+.row.special-row .box.secondary-box {
+  background-color: cyan;
+}
+
+.row.special-row .box.primary-box.special-box {
+  background-color: green;
+}
+
+.row.special-row .box.secondary-box.special-box {
+  background-color: deeppink;
+}
+
+
 /* 
     Izveidojam selektorus ar atbilstošu specifitāti,
     lai visu kastīšu krāsa atbilstu attēlā redzamajai:

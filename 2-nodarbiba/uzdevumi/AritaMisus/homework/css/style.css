@@ -29,7 +29,7 @@ main{
     left: 50px;
     transition: all 0.9s linear;
 }
-#action-btn{
+#action-btn {
     width: 100px;
     height: 50px;
     border: none;
@@ -39,4 +39,28 @@ main{
     cursor: pointer;
     color: white;
     background-color:gray;
+}
+
+#action-btn-2 {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#action-btn-3 {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color:purple;
 }
