@@ -40,3 +40,30 @@ main{
     color: white;
     background-color:gray;
 }
+.h2 {
+    display: flex;
+    text-align: center;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    
+}
