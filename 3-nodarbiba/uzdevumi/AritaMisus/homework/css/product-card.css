@@ -1,0 +1,14 @@
+.card {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: larger;
+}
+.btn {
+  background-color: var(--primary);
+  margin-top: 20px;
+  border: var(--primary);
+}
