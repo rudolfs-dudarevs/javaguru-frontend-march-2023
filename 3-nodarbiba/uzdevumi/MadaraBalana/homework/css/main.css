@@ -1,6 +1,9 @@
-main {
-    width: 100%;
-    height: 100vh;
-    padding: 5rem 0 0;
-    color: var(--white);
+.card {
+  background-color: lavenderblush;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

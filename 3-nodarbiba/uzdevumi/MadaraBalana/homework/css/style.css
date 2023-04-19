@@ -1,19 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Shadows+Into+Light+Two&display=swap");
 @import "./reset.css";
 @import "./colors.css";
 @import "./header.css";
-@import "./buttons.css";
 @import "./main.css";
-@import "./product-card.css";
-
-* {
-    box-sizing: border-box;
-}
 
 html {
-    font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--secondary);
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Shadows Into Light Two", normal;
 }
