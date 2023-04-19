@@ -1,25 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Media queries</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    <body>
-        <header>
-            <!-- 
+  <head>
+    <meta charset="UTF-8" />
+    <title>Media queries</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=1"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">
+        Ivita Lūse
+        <span class="subtitle"> Frontend developer </span>
+      </h1>
+    </header>
+    <!-- 
                 Izveidot header elementu un noformēt pēc saviem ieskatiem (var izmantot bootstrap)
              -->
-        </header>
-        <main>
-            <!-- 
+
+    <main class="container">
+      <div class="row">
+        <div class="col-3 p-2 md-6" id="col">
+          <div class="card">
+            <img
+              src="./images/autumn.jpg"
+              alt="autumn landsape"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Autumn</h5>
+              <p class="card-text">
+                “Autumn carries more gold in its pocket than all the other
+                seasons.” --Jim Bishop
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 p-2 md-6" id="col">
+          <div class="card">
+            <img
+              src="./images/winter.jpg"
+              alt="winter landsape"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Winter</h5>
+              <p class="card-text">
+                "It is the life of the crystal, the architect of the flake, the
+                fire of the frost, the soul of the sunbeam. This crisp winter
+                air is full of it." --John Burroughs.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-3 p-2 md-6" id="col">
+          <div class="card">
+            <img
+              src="./images/spring.jpg"
+              alt="spring landsape"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spring</h5>
+              <p class="card-text">
+                “Springtime is the land awakening. The March winds are the
+                morning yawn." -- Lewis Grizzar
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 p-2 md-6" id="col">
+        <div class="card">
+          <img
+            src="./images/summer.jpg"
+            alt="summer landsape"
+            class="card-img"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Summer</h5>
+            <p class="card-text">
+              "Keep your face to the sunshine and you will never see the
+              shadows." -- Helen Keller
+            </p>
+          </div>
+        </div>
+        </div>
+    </main>
+      <!-- 
                 Izveidot 4 card elementus un noformēt pēc saviem ieskatiem (var izmantot bootstrap).
                 Card elementiem jābūt adaptīviem platumā uz:
                     - maza izmēra ekrāniem
                     - vidēja izmēra ekrāniem
                     - liela izmēra ekrāniem
              -->
-        </main>
-    </body>
+  </body>
 </html>
