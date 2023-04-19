@@ -1,54 +1,65 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Homework</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <!-- 1. Piemērs -->
-            <h1>Express yourself</h1>
-            <div id="action-pos" class="container">
-                <div id="action-el" class="box">Element</div>
-            </div>
-            <h2>Size</h2>
-            <div class="btnSize">
-                <button id="action-btn" onclick="changeSize()">Small</button>
-                <button id="action-btn" onclick="changeSize2()">Medium</button>
-                <button id="action-btn" onclick="changeSize3()">Large</button>
-            </div>
-            <!-- 2. Piemērs -->
-            <h2>Color</h2>
-            <div class="btnColor">
-                <button id="action-btn" onclick="changeColor()">Blue</button>
-                <button id="action-btn" onclick="changeColor2()">Green</button>
-                <button id="action-btn" onclick="changeColor3()">Red</button>
-            </div>
-            <!-- 3. Piemērs -->
-            <h2>Position</h2>
-            <div class="btnPos">
-                <div>
-                    <button id="action-btn" onclick="changePosTopLeft()">&nwarr;</button>
-                    <button id="action-btn" onclick="changePosTopCenter()">&uarr;</button>
-                    <button id="action-btn" onclick="changePosTopRight()">&nearr;</button>
-                </div>
-                <div>
-                    <button id="action-btn" onclick="changePosMidLeft()">&larr;</button>
-                    <button id="action-btn" onclick="changePosMidCenter()">Center</button>
-                    <button id="action-btn" onclick="changePosMidRight()">&rarr;</button>
-                </div>
-                <div>
-                    <button id="action-btn" onclick="changePosBottomLeft()">&swarr;</button>
-                    <button id="action-btn" onclick="changePosBottomCenter()">&darr;</button>
-                    <button id="action-btn" onclick="changePosBottomRight()">&searr;</button>
-                </div>
-            </div>
-            
-        </main>
-        <script src="./app.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=1"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- 1. Piemērs -->
+      <h1>Express yourself</h1>
+      <div id="action-pos" class="container">
+        <div id="action-el" class="box">Element</div>
+      </div>
+      <h2>Size</h2>
+      <div class="btnSize">
+        <button id="action-btn" onclick="changeSize()">Small</button>
+        <button id="action-btn" onclick="changeSize2()">Medium</button>
+        <button id="action-btn" onclick="changeSize3()">Large</button>
+      </div>
+      <!-- 2. Piemērs -->
+      <h2>Color</h2>
+      <div class="btnColor">
+        <button id="action-btn" onclick="changeColor()">Blue</button>
+        <button id="action-btn" onclick="changeColor2()">Green</button>
+        <button id="action-btn" onclick="changeColor3()">Red</button>
+      </div>
+      <!-- 3. Piemērs -->
+      <h2>Position</h2>
+      <div class="btnPos">
+        <div>
+          <button id="action-btn" onclick="changePosTopLeft()">&nwarr;</button>
+          <button id="action-btn" onclick="changePosTopCenter()">&uarr;</button>
+          <button id="action-btn" onclick="changePosTopRight()">&nearr;</button>
+        </div>
+        <div>
+          <button id="action-btn" onclick="changePosMidLeft()">&larr;</button>
+          <button id="action-btn" onclick="changePosMidCenter()">Center</button>
+          <button id="action-btn" onclick="changePosMidRight()">&rarr;</button>
+        </div>
+        <div>
+          <button id="action-btn" onclick="changePosBottomLeft()">
+            &swarr;
+          </button>
+          <button id="action-btn" onclick="changePosBottomCenter()">
+            &darr;
+          </button>
+          <button id="action-btn" onclick="changePosBottomRight()">
+            &searr;
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
 </html>
