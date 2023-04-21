@@ -16,8 +16,26 @@
 }
 
 #subtitle {
-  display: none;
-  font-size: 16px;
-  color: var(--primary);
-  margin: 5px 0 0;
+    display: none;
+    font-size: 1rem;
+    color: var(--primary);
+    margin: 0.3rem 0 0;
+}
+
+@media only screen and (min-width:1200px) {
+    #header {
+        height:80px;
+    }
+    #subtitle {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    #header {
+        height:65px;
+    }
+    #subtitle {
+        display: none;
+    }
 }
