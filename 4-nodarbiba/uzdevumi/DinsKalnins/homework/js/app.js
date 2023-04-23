@@ -1,8 +1,8 @@
 // Izveidot funkcijas appendListElements() kodu, lai izveidotu HTML elementus un pievienotu tos #list-container.
 // Rezultatam jāizskatās kā example.jpg redzamajam sarkastam.
 
-// 1. Aizpilkdīts cvList masīvu ar 4 brīvi izvēlētu personu/tēlu CV objektiem (nav jābūt reāliem piemēriem).
-//    CV objekti satur īpašības: 
+// 1. Aizpildīt cvList masīvu ar 4 brīvi izvēlētu personu/tēlu CV objektiem (nav jābūt reāliem piemēriem).
+//    CV objekti satur īpašības:
 //       -- firstName (string)
 //       -- lastName (string)
 //       -- phoneNr (number)
@@ -22,7 +22,7 @@
 //            <li class="text">${elements.workExperiences[0]}</li>
 //            <li class="text">${elements.workExperiences[1]}</li>
 //            ...
-//        </ul>           
+//        </ul>
 //     - katrs div elements satur <ul></ul> elementu, jeb sarakstu ar languages masīva objektu vērtībām:
 //        <p class="subtitle">Languages</p>
 //        <ul>
@@ -37,12 +37,124 @@
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+const cvList = [
+  {
+    firstName: "Mārīte",
+    lastName: "Raibā",
+    phoneNr: 25231232,
+    email: "ramonchiks@gmail.com",
+    workExperience: ["SIA RIMI", "VID", "SIA Maxima", "SIA Prizma"],
+    languages: {
+      lv: {
+        name: "Latviešu",
+        level: "Native",
+      },
+      eng: {
+        name: "Angļu",
+        level: "Fluent",
+      },
+      rus: {
+        name: "Krievu",
+        level: "Secondary",
+      },
+    },
+  },
+  {
+    firstName: "Raivis",
+    lastName: "Gailums",
+    phoneNr: 25354332,
+    email: "ramono@gmail.com",
+    workExperience: ["Google", "Tesla", "MarketUp", "ChatGPT"],
+    languages: {
+      lv: {
+        name: "Latviešu",
+        level: "Native",
+      },
+      eng: {
+        name: "Angļu",
+        level: "Fluent",
+      },
+      rus: {
+        name: "Krievu",
+        level: "Secondary",
+      },
+    },
+  },
+  {
+    firstName: "Monika",
+    lastName: "Raivčsata",
+    phoneNr: 22433132,
+    email: "rmonikaa@gmail.com",
+    workExperience: ["SIA Vitamins.lv", "SIA Ballzy", "WNBA", "Uber"],
+    languages: {
+      lv: {
+        name: "Latviešu",
+        level: "Native",
+      },
+      eng: {
+        name: "Angļu",
+        level: "Fluent",
+      },
+      rus: {
+        name: "Krievu",
+        level: "Secondary",
+      },
+    },
+  },
+  {
+    firstName: "Patriks",
+    lastName: "Falkons",
+    phoneNr: 25141232,
+    email: "patricio@gmail.com",
+    workExperience: [
+      "SIA SportaSistemas.lv",
+      "SIA Dreama",
+      "Veselibas Centrs 4",
+      "SIA Marks",
+    ],
+    languages: {
+      lv: {
+        name: "Latviešu",
+        level: "Native",
+      },
+      eng: {
+        name: "Angļu",
+        level: "Fluent",
+      },
+      rus: {
+        name: "Krievu",
+        level: "Secondary",
+      },
+    },
+  },
+];
 
 const appendListElements = () => {
-    listContainer.innerHTML = "";
+  listContainer.innerHTML = "";
+  listContainer.classList.add("list-container-show");
+  cvList.forEach((item) => {
+    const listEl = `
+    <div class="list-item">
+        <h2 class="title">${item.firstName} ${item.lastName}</h2>
+        <p class="text">PhoneNr.: ${item.phoneNr}</p>
+        <p class="text">Email: ${item.email}</p>
+        <p class="subtitle">Work experience</p>
+        <ul>
+            <li class="text">${item.workExperience[0]}</li>
+            <li class="text">${item.workExperience[1]}</li>
+            <li class="text">${item.workExperience[2]}</li>
+            <li class="text">${item.workExperience[3]}</li>
+        </ul>
+        <p class="subtitle">Languages</p>
+        <ul>
+            <li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
+            <li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
+            <li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
+        </ul>
+    </div>
+`;
+    listContainer.innerHTML += listEl;
+  });
+};
 
-    cvList.forEach(() => {
-        
-    })
-}
+generateListBtn.addEventListener("click", appendListElements);
