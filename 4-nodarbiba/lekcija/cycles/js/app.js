@@ -4,10 +4,10 @@
 // izteiksme 2 - nosacījums pie kura cikls pārstāj darboties
 // izteiksme 3 - darbība, kas tiek veikta pēc katra cikla
 // i++ ir saīsināts pieraksts izteiksmei i = i + 1;
-for(let i = 0; i < 10; i++) {
-    console.log("Current index:", i);
+for(let a = 0; a < 10; a++) {
+    console.log("Current index:", a);
 };
-console.log("");
+// console.log("");
 // for loops, kurš sāk ar i vērtību 10 un samazina to par 1 pēc katras iterācijas(cikla)
 for(let i = 10; i > 0; i--) { 
     console.log("Current index:", i);
@@ -63,8 +63,8 @@ frontendTools.forEach((item) => {
 });
 
 // otrais parametrs ko saņems cikla funkcija (callback function), ja šis parametrs ir norādīts - aktuālā elementa indeks masīvā.
-frontendTools.forEach((item, i) => {
-    console.log(`Array element index ${i}:`, item);
+frontendTools.forEach((item, a) => {
+    console.log(`Array element index ${a}:`, item);
 });
 
 // analogs piemērs for ciklam 27 rindiņā, bet ar forEach() cikla metodi.
