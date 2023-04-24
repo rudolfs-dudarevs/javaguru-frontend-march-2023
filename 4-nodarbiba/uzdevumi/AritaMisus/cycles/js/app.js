@@ -30,7 +30,7 @@ const appendListElements = () => {
 
   boxList.forEach((box, index) => {
     const boxEl = `
-        <div class="list-item" style="background-color: ${backgroundColors[index]};">
+        <div class="list-item" style="background-color: ${backgroundColors[index]}">
         ${box}
         </div>
     `;
