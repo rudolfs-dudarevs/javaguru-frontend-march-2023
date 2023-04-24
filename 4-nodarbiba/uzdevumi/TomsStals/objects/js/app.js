@@ -34,3 +34,40 @@
 //    -- piem., vardsUzvards.languages.lv objekta īpašību apvienojums izskatītos šādi:
 //       Latviešu - Native 
 //       Un tiktu panākta ar string literal pierakstu `${vardsUzvards.languages.lv.name} - ${vardsUzvards.languages.lv.level}`
+
+
+const cv = {
+
+    firstName: "Jeff",
+    lastName:  "Bezos",
+    email: "jeff@amazon.com",
+    telNr: +1-541-754-3010,
+    workExperience: [
+        "SIA Amazon",
+        "SIA Blue Origin",
+        "SIA Bezos Unlimited",
+        "SIA Jeffy Home Deliveries"
+    ],
+
+    languages: {
+        lv:{
+            name:"Latviesu",
+            level: "Native"
+        },
+        eng:{
+            name:"English",
+            level:"Professional"
+        },
+        dk:{
+            name:"Danish",
+            level:"Basic",
+        }
+    }
+}
+
+//Task 6.
+console.log(cv.firstName + " " + cv.lastName)
+//Task 7.
+console.log(cv.workExperience[1])
+//Task 8.
+console.log(`${cv.languages.eng.name} - ${cv.languages.eng.level}`)
