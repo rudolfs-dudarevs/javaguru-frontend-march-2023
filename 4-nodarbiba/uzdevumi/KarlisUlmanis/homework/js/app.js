@@ -34,15 +34,132 @@
 // 7. Brīvi noformēt katru .list-item elementu ar CSS iekš list-container.css faila.
 //    Ieteicams izveidojot katra .list-item child elementus jeb tur iekšā esošos <h2>, <p>, <ul> un <li> elementus - piešķirt šiem elementiem class atribūtus, kad tie tiek izveidoti.
 
+
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+let name = ["Aiga", "Baiba", "Eduards", "Rainers"];
+let surname = ["Bumbiere", "Jokdare", "Tauriņš", "Kuprinskis"];
+let emailArray = ["aiga@inbox.lv", "baiba@gmail.com", "eduards.taurins@bbl.lv", "rainis@spainis.au"];
+let phoneNumber = [2244685, 22266589, 23771268, 21166688];
+let language = ["latviešu", "krievu", "angļu"];
+let languageLevel = ["basic", "good", "expert", "native"];
+
+
+let cvFirst = {
+    firstName: name[0],
+    lastName: surname[0],
+    email: emailArray[0],
+    telnr: phoneNumber[0],
+    workExperience: ["LMT", "Tele2", "Bite"],
+    languages: {
+        lv: {
+            name: language[0],
+            level: languageLevel[3] 
+        },
+        ru: {
+            name: language[1],
+            level: languageLevel[1] 
+        },
+        en: {
+            name: language[2],
+            level: languageLevel[0] 
+        }
+    }
+}
+
+let cvSecond = {
+    firstName: name[1],
+    lastName: surname[1],
+    email: emailArray[1],
+    telnr: phoneNumber[1],
+    workExperience: ["Origo", "Mego", "Rimi"],
+    languages: {
+        lv: {
+            name: language[0],
+            level: languageLevel[3] 
+        },
+        ru: {
+            name: language[1],
+            level: languageLevel[2] 
+        },
+        en: {
+            name: language[2],
+            level: languageLevel[1] 
+        }
+    }
+}
+
+let cvThird = {
+    firstName: name[2],
+    lastName: surname[2],
+    email: emailArray[2],
+    telnr: phoneNumber[2],
+    workExperience: ["accenture", "evolution gaming", "Casino Royale"],
+    languages: {
+        lv: {
+            name: language[0],
+            level: languageLevel[0] 
+        },
+        ru: {
+            name: language[1],
+            level: languageLevel[0] 
+        },
+        en: {
+            name: language[2],
+            level: languageLevel[3] 
+        }
+    }
+}
+
+let cvFour = {
+    firstName: name[3],
+    lastName: surname[3],
+    email: emailArray[3],
+    telnr: phoneNumber[3],
+    workExperience: ["Mūsa Motors", "Volvo Centrs"],
+    languages: {
+        lv: {
+            name: language[0],
+            level: languageLevel[2] 
+        },
+        ru: {
+            name: language[1],
+            level: languageLevel[0] 
+        },
+        en: {
+            name: language[2],
+            level: languageLevel[3] 
+        }
+    }
+}
+
+const cvList = [cvFirst, cvSecond, cvThird, cvFour];
+
+console.log(cvList[0].firstName);
 
 const appendListElements = () => {
-    listContainer.innerHTML = "";
-
-    cvList.forEach(() => {
-        
-    })
+    cvList.forEach((array, index) => {
+        let addList = 
+        `<div class="list-item">
+            <h2 class="title">Name: ${cvList[index].firstName} ${cvList[index].lastName}</h2>
+            <p class="text">PhoneNr.: ${cvList[index].telnr}</>
+            <p class="text">Email: ${cvList[index].email}</>
+            <p class="subtitle">Work experience</p>
+                <ul>
+                    <li class="text">${cvList[index].workExperience[0]}</li>
+                    <li class="text">${cvList[index].workExperience[1]}</li>
+                    <li class="text">${cvList[index].workExperience[2]}</li>
+                </ul>
+            <p class="subtitle">Languages</p>
+                <ul>
+                    <li class="text">${cvList[index].languages.lv.name} - ${cvList[index].languages.lv.level}</li>
+                    <li class="text">${cvList[index].languages.ru.name} - ${cvList[index].languages.ru.level}</li>
+                    <li class="text">${cvList[index].languages.en.name} - ${cvList[index].languages.en.level}</li>
+                </ul>
+            </div>`
+            listContainer.innerHTML += addList;
+        });
 }
+
+generateListBtn.addEventListener("click", appendListElements);
