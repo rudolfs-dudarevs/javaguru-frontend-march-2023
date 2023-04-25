@@ -2,7 +2,7 @@
 // Rezultatam jāizskatās kā example.jpg redzamajam sarkastam.
 
 // 1. Aizpilkdīts cvList masīvu ar 4 brīvi izvēlētu personu/tēlu CV objektiem (nav jābūt reāliem piemēriem).
-//    CV objekti satur īpašības: 
+//    CV objekti satur īpašības:
 //       -- firstName (string)
 //       -- lastName (string)
 //       -- phoneNr (number)
@@ -22,7 +22,7 @@
 //            <li class="text">${elements.workExperiences[0]}</li>
 //            <li class="text">${elements.workExperiences[1]}</li>
 //            ...
-//        </ul>           
+//        </ul>
 //     - katrs div elements satur <ul></ul> elementu, jeb sarakstu ar languages masīva objektu vērtībām:
 //        <p class="subtitle">Languages</p>
 //        <ul>
@@ -39,10 +39,153 @@ const generateListBtn = document.getElementById("generate-list-btn");
 
 const cvList = [];
 
-const appendListElements = () => {
-    listContainer.innerHTML = "";
+const cv1 = {
+  firstName: "Kristaps",
+  lastName: "Bērziņš",
+  email: "kristaps.berzins@gmail.com",
+  telNr: 12345678,
+  workExperience: [
+    "AS Citadele banka",
+    "AS ALTUM",
+    "AS Swedbank",
+    "AS BluOr bank",
+  ],
 
-    cvList.forEach(() => {
-        
-    })
-}
+  languages: {
+    lv: {
+      name: "Latvian",
+      level: "Native",
+    },
+
+    rus: {
+      name: "Russian",
+      level: "Intermediate",
+    },
+
+    eng: {
+      name: "English",
+      level: "Proficient",
+    },
+  },
+};
+
+const cv2 = {
+  firstName: "Liene",
+  lastName: "Kļaviņa",
+  email: "liene.klavina@gmail.com",
+  telNr: 27654988,
+  workExperience: [
+    "SIA Veikals Rīts",
+    "SIA Rimi Latvia",
+    "Maxima LV",
+    "Lidl Latvija",
+  ],
+
+  languages: {
+    lv: {
+      name: "Latvian",
+      level: "Native",
+    },
+
+    rus: {
+      name: "Russian",
+      level: "Intermediate",
+    },
+
+    eng: {
+      name: "English",
+      level: "Proficient",
+    },
+  },
+};
+
+const cv3 = {
+  firstName: "Paula",
+  lastName: "Lielmane",
+  email: "paula.lielmane@gmail.com",
+  telNr: 25465768,
+  workExperience: [
+    "SIA Skaistuma pasaule",
+    "SIA Skaistuma bārs",
+    "SIA Beauty shop",
+    "SIA Nails beauty",
+  ],
+
+  languages: {
+    lv: {
+      name: "Latvian",
+      level: "Native",
+    },
+
+    rus: {
+      name: "Russian",
+      level: "Intermediate",
+    },
+
+    eng: {
+      name: "English",
+      level: "Proficient",
+    },
+  },
+};
+
+const cv4 = {
+  firstName: "Mārtiņš",
+  lastName: "Lapiņš",
+  email: "martins.lapins@gmail.com",
+  telNr: 29765432,
+  workExperience: [
+    "SIA Skanstes būves",
+    "SIA Ozola nami",
+    "SIA Eko būve",
+    "SIA Depo",
+  ],
+
+  languages: {
+    lv: {
+      name: "Latvian",
+      level: "Native",
+    },
+
+    rus: {
+      name: "Russian",
+      level: "Intermediate",
+    },
+
+    eng: {
+      name: "English",
+      level: "Proficient",
+    },
+  },
+};
+
+cvList.push(cv1, cv2, cv3, cv4);
+
+const appendListElements = () => {
+  listContainer.innerHTML = "";
+  listContainer.classList.add("list-container-show");
+
+  cvList.forEach((item) => {
+    const listEl = `<div class="list-item"
+    <h2 id="title">${item.firstName} ${item.lastName}</h2>
+<p class="text">Phone Nr. ${item.telNr}</p>
+ <p class="text">Email: ${item.email}</p>
+ <p class="subtitle">Work experience</p>
+<ul>
+<li class="text">${item.workExperience[0]}</li>
+<li class="text">${item.workExperience[1]}</li>
+<li class="text">${item.workExperience[2]}</li>
+<li class="text">${item.workExperience[3]}</li>
+ </ul>
+ <p class="subtitle">Languages</p>
+<ul>
+<li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
+<li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
+<li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
+ </ul>
+ </div>`;
+    listContainer.innerHTML += listEl;
+  });
+};
+
+generateListBtn.addEventListener("click", appendListElements);
