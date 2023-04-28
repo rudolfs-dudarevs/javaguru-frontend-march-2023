@@ -1,0 +1,21 @@
+header {
+    position: fixed;
+    padding: 15px 0;
+    border-bottom: solid black 2px;
+    background-image: linear-gradient(to right, crimson, yellow, crimson);
+    font-family: 'Times New Roman', Times, serif;
+    width:100%;
+}
+
+h1, .description {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.description {
+    font-size:20px;
+}
