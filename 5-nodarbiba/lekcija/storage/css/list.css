@@ -1,0 +1,16 @@
+.row-text, .list-label {
+    font-weight: normal;
+    color: var(--secondary)
+}
+
+.row-value {
+    font-weight: bold;
+    color: var(--primary)
+}
+
+.list-item {
+    color: var(--primary);
+    font-weight: bold;
+    list-style: circle;
+    margin: 0 0 0 30px;
+}
