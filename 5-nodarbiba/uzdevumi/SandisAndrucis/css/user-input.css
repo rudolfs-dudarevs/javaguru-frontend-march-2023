@@ -29,3 +29,14 @@
     border-radius: 10px;
     margin: 0 0 20px;
 }
+
+.clear-group {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+.btn-border {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+}

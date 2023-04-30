@@ -9,9 +9,12 @@
 // - arī ļoti ieteicams, ja ir laiks un vēlme.
 
 // Dotie mainigie priekš HTML elementiem:
-const itemInput = document.getElementById("item-input");
+let itemInput = document.getElementById("item-input");
 const addBtn = document.getElementById("add-btn");
 const shoppingListContainer = document.getElementById("shopping-list");
+const clearBtn = document.getElementById("clear-btn");
+
+let list = localStorage.getItem("shoppingList");
 // Dotais mainīgais priekš iepirkumu saraksta:
 let shoppingList;
 
@@ -19,7 +22,7 @@ let shoppingList;
 // 1. Iegūstam no localStorage ierakstu(value) ar nosaukumu(key) "shoppingList" 
 
 // shoppingListAsString = 
-
+shoppingList = JSON.parse(list);
 // --------------------------------------------------------
 // 2. ar JSON.parse() metodi pārvēršam shoopingListAsString
 //    no JSON string atpakaļ uz masīvu(array).
@@ -33,27 +36,31 @@ if(!shoppingList) {
     // jo mums jau ir masīvs ar datiem, kas iegūts no localStorage.
     shoppingList = [];
 }
-
 // ---------------------------------------
 // 3. Izveidojam funkcijas loģiku, kas tiks izpildīta uz katra addBtn klikšķa.
 const addToShoppingList = () => {
     // Iegūstam vērtību no input HTML elementa jeb itemInput mainīgā.
     // 3.1
     // let item = 
-
+    console.log(itemInput.value);
+    if (itemInput.value != "") {
+        let item = itemInput.value;
     // Iestatīt itemInput.value kā tukšu string (notīrīt esošo tekstu no ievdlauka).
     // 3.2
     // itemInput.value = 
-
+        itemInput.value = "";
     // shoppingList masīvā ievietojam item mainīgo. Izmantot masīva push() metodi.
     // 3.3
     // shoppingList
-
+        shoppingList.push(item);
     // Uz katra pogas klikšķa jāizsauc funkciju saveStorage() un renderShoppingList()
     // Šī funkcija saglabās iekš local storage shoppingList masīvu ka JSON
-    saveStorage();
+        saveStorage();
     // Šī funkcija izveidos un ievietos HTML priekš katra shoppingList masīva elementa.
-    renderShoppingList();
+        renderShoppingList();
+    } else {
+        alert("Not a product!!!");
+    }
 }
 
 // --------------------------------------------------------------------------------------
@@ -62,19 +69,27 @@ const saveStorage = () => {
     // Izmantojam JSON.stringify(), lai pārvērstu shoppingList masīvu JSON string formātā.
     // 4.1
     // let shoppingListAsJSON = 
-    
+    let shoppingListAsJSON = JSON.stringify(shoppingList);
     // Iekš localStorage saglabājam shoppingListAsJSON mainīgo ar nosaukumu "shoppingList"
     // 4.2
-
+    localStorage.setItem("shoppingList", shoppingListAsJSON);
 }
 
 // ------------------------------------------------------------------
 // 5. Izveidot funkcijas loģiku, lai iterētu caur shoppingList masīvu
 //    un katram masīva elementam izveidotu HTML.
-const renderShoppingList = () => {
-    // String mainīgais, kurā ievietosim HTML priekš katra shoppingList masīva elementa.
-    let listToRender = '';
 
+const renderShoppingList = () => {
+    list = localStorage.getItem("shoppingList");
+    let listToRender = '';
+    if (list) {
+    // String mainīgais, kurā ievietosim HTML priekš katra shoppingList masīva elementa.
+    let shoppingListParsed = JSON.parse(list);
+    Object.keys(shoppingListParsed).forEach((element) => {
+        listToRender += `
+        <li class="list-group-item">${shoppingListParsed[element]}</li>
+        `;
+    });
     // 5.1 Iterēt cauri shopping list masīvam ar forEach ciklu.
     //     Katram masīva elementam izpildīt sekojošo darbību:
     //
@@ -83,8 +98,9 @@ const renderShoppingList = () => {
     //              ${item}
     //          </li>
     //      `;
-
+    }
     shoppingListContainer.innerHTML = listToRender;
+    
 }
 
 // Lai shopping list no localStorage tikktu attēlots līdz ar lapas ielādi,
@@ -94,7 +110,14 @@ renderShoppingList();
 // -----------------------------------------------------------------------------
 // 6. mainīgajam addBtn uz klikšķa notikua piesaistīt funkciju addToShoppingList
 //    izmantot .addEventListener() metodi.
+const clearShoppingList = () => {
+    localStorage.clear();
+    shoppingList = [];
+    renderShoppingList();
+}
+
 addBtn.addEventListener('click', addToShoppingList);
+clearBtn.addEventListener('click', clearShoppingList);
 
 // -----------------------------------------------------------------------------
 // 7. NAV OBLIGĀTI
