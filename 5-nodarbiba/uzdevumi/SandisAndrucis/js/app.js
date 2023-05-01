@@ -59,7 +59,7 @@ const addToShoppingList = () => {
     // Šī funkcija izveidos un ievietos HTML priekš katra shoppingList masīva elementa.
         renderShoppingList();
     } else {
-        alert("Not a product!!!");
+        alert("Entry field was left empty!");
     }
 }
 
