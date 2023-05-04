@@ -29,3 +29,15 @@
     border-radius: 10px;
     margin: 0 0 20px;
 }
+
+#delete-btn,
+#delete-btn:active,
+#delete-btn:focus {
+    color: var(--alert);
+    margin-top: 20px;
+}
+
+#delete-btn:hover {
+    background-color: var(--alert);
+    color: var(--white);
+}
