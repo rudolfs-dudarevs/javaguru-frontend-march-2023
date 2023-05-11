@@ -7,18 +7,26 @@
 }
 
 .list-item {
-    padding: 20px;
+    padding: 15px;
     background-color: var(--white);
     border: 2px solid var(--primary);
+    width: 300px;
+    border-radius: 5px;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 26px;
     margin: 12px 0;
+    text-align: center;
 }
 
 .subtitle {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: bolder;
     margin: 8px 0;
+    text-align: center;
+}
+
+.text {
+    font-size: 18px;
 }

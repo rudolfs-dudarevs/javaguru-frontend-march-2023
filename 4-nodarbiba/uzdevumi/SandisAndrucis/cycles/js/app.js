@@ -18,6 +18,23 @@ const generateListBtn = document.getElementById("generate-list-btn");
 const backgroundColors = ["blueviolet", "darkorange", "crimson", "darkmagenta", "deeppink", "plum"];
 const boxList = ["Box 1", "Box 2", "Box 3"];
 
+boxList.push("Box 4");
+boxList.push("Box 5");
+boxList.push("Box 6");
+
+
+
 const appendListElements = () => {
-    
+    listContainer.innerHTML = "";
+    listContainer.classList.add('list-container-show');
+    boxList.forEach((element, index) => {
+        const listEl = `
+            <div class="list-item" style="background-color: ${backgroundColors[index]};">
+                ${element}
+            </div>
+        `;
+        listContainer.innerHTML += listEl;
+    });
 }
+
+generateListBtn.addEventListener("click", appendListElements);
