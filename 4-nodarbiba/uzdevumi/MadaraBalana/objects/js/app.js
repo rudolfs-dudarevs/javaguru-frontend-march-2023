@@ -1,3 +1,48 @@
+let madaraBalana = {
+  firstName: "Madara",
+  lastName: "Balana",
+  email: "madara.balanas@gmail.com",
+
+  telNr: 26164785,
+
+  workExperience: [
+    "Saeimas Administrācijas Saeimas sēžu nodrošinājuma nodaļa",
+    "SIA Palink",
+    "Valsts sociālās apdrošināšanas aģentūra",
+    "Studijas :)",
+  ],
+
+  languages: {
+    lv: {
+      name: "Latviešu valoda",
+      level: "Native",
+    },
+    eng: {
+      name: "Angļu valoda",
+      level: "Proficient",
+    },
+    rus: {
+      name: "Krievu valoda",
+      level: "Intermediate",
+    },
+    de: {
+      name: "Vācu valoda",
+      level: "Intermediate",
+    },
+  },
+};
+
+console.log(
+  "Personas vārds, uzvārds: ",
+  madaraBalana.firstName + " " + madaraBalana.lastName
+);
+
+console.log("Pirmspēdējā darba vieta: ", madaraBalana.workExperience[1]);
+
+console.log(
+  `${madaraBalana.languages.eng.name} - ${madaraBalana.languages.eng.level}`
+);
+
 // Izveidot Objektu, kas saturēs informāciju par jūsu personīgo vai izdomāta tēla CV.
 
 // 1. Mainiga nosaukums, kurš satur Objektu ir vardsUzvards (jūsu vārds/uzvārds)
@@ -14,7 +59,7 @@
 //    -- languages
 //    Languages objektā ir 3 īpašības ar nosaukumiem lv, rus, eng, piem.
 //    Katra no languages objekta īpašībām ir objekts, kas satur 2 īpašības - name, level.
-//    
+//
 //    languages: {
 //          lv: {
 //             name: "Latviešu",
@@ -22,7 +67,7 @@
 //          },
 //          rus: {
 //              ...
-//          }, 
+//          },
 //          eng: {
 //              ...
 //          }
@@ -32,5 +77,5 @@
 // 7. Izvadīt konsolē CV objekta īpašības workExperience 2 elementu (index 1).
 // 8. Izvadīt konsolē CV objekta īpašības languages objekta eng īpašības name un level apvienojumu.
 //    -- piem., vardsUzvards.languages.lv objekta īpašību apvienojums izskatītos šādi:
-//       Latviešu - Native 
+//       Latviešu - Native
 //       Un tiktu panākta ar string literal pierakstu `${vardsUzvards.languages.lv.name} - ${vardsUzvards.languages.lv.level}`
