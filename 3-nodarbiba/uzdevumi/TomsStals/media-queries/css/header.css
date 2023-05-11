@@ -21,3 +21,23 @@
   color: var(--primary);
   margin: 5px 0 0;
 }
+
+/* mobile layout*/
+@media screen and (min-width: 480px){
+  #header {
+     height: 65px;
+  }
+  #subtitle{
+    display: none;
+  }
+}
+
+/* desktop layout*/
+@media screen and (min-width: 1200px){
+  #header {
+     height: 80px;
+  }
+  #subtitle{
+    display: block;
+  }
+}
