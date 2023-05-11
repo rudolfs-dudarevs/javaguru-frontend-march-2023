@@ -1,4 +1,5 @@
 .product-card {
+  /* display: inline-block; */
   height: max-content;
   color: var(--black);
   background-color: var(--primary);
