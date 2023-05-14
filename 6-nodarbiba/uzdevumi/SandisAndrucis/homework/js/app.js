@@ -61,7 +61,7 @@ const renderDogImg = (data) => {
   dogPic.src = data.message;
   dogPic.classList.add("dog-image");
   dogImg.innerHTML = '';
-  dogImg.appendChild(dogPic);
+  dogImg.append(dogPic);
 };
 
 const getDogImg = () => {

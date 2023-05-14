@@ -5,5 +5,33 @@
 
 .dog-image {
     display: block;
-    margin:5px auto;
+    margin:10px auto;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:1200px) {
+    .dog-image {
+        max-width:60%;
+        max-height:60%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    .dog-image {
+        max-width:75%;
+        max-height:75%;
+    }
+    .dog-selector {
+        width:60%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .dog-image {
+        max-width:95%;
+        max-height:95%;
+    }
+    .dog-selector {
+        width:75%;
+    }
 }
