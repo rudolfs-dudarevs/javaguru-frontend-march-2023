@@ -1,24 +1,32 @@
 .list-container {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .list-item {
-    padding: 20px;
-    background-color: var(--white);
-    border: 2px solid var(--primary);
+  padding: 10px;
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+  width: 350px;
 }
 
-.title {
-    font-size: 24px;
-    margin: 12px 0;
+#title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #009483;
 }
-
 .subtitle {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.text {
+  font-size: 14px;
+  color: black;
 }
