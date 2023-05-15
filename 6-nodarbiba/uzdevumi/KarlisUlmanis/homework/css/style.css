@@ -14,10 +14,11 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
 }
 
 main {
-    padding: 110px 30px;
+    /* padding: 110px 30px; */
 }
 
 h1 {
@@ -25,4 +26,9 @@ h1 {
     font-weight: bold;
     font-size: 32px;
     margin: 0 0 8px;
+ }
+
+ .container {
+    position: absolute; 
+
  }

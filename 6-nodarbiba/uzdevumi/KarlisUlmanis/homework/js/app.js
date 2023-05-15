@@ -58,7 +58,7 @@ const renderDogBreedList = () => {
 };
 
 const renderDogImg = (data) => {
-  dogImg.innerHTML = `<img src=${data.message} class="dog-image">`;
+  dogImg.innerHTML = `<img src=${data.message} class="dog-img">`;
 };
 
 const getDogImg = () => {
