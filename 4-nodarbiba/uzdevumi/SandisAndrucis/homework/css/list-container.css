@@ -1,0 +1,32 @@
+.list-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.list-item {
+    padding: 15px;
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    width: 300px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 26px;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.text {
+    font-size: 18px;
+}

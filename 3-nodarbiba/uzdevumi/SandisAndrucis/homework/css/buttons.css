@@ -1,0 +1,16 @@
+.btn {
+    display: block;
+    margin:8px auto;
+    height:40px;
+    width: 80%;
+    font-weight: bold;
+    color: var(--black);
+    background-image: linear-gradient(yellow,brown);
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    cursor:pointer;
+    color: var(--grey);
+}

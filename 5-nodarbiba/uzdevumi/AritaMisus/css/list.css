@@ -1,0 +1,23 @@
+.container,
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-group-item {
+  font-weight: bold;
+}
+
+.container {
+  width: 30vw;
+  padding: 110px 0;
+  flex-direction: column;
+}
+
+.input-group {
+  margin: 0 0 50px;
+}
+
+.task-text {
+  margin: 0 15px;
+}

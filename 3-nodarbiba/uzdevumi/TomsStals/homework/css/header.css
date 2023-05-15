@@ -1,0 +1,36 @@
+/* mobile layout*/
+@media screen and (min-width: 380px){
+    #menu{
+        height:65px;
+        background-color:var(--primary);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul a {
+        color: var(--white);
+        padding: 0 5px 0 5px;
+        font-size:16px;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+    }
+    ul a:hover{
+        color:var(--black);
+        text-decoration: none;
+    }
+  }
+  
+  /* tablet layout*/
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    #menu{
+        height:80px;
+    }
+  }
+  
+  /* desktop layout*/
+  @media screen and (min-width: 1200px){
+    #menu{
+        height:80px;
+    }
+    
+  }

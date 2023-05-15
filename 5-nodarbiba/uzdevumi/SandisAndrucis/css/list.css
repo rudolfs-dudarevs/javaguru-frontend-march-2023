@@ -1,0 +1,41 @@
+.container,
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group-item {
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.container {
+    padding: 110px 0 ;
+    flex-direction: column;
+}
+
+.input-group {
+    margin: 0 0 50px;
+}
+
+.task-text {
+    margin: 0 15px;
+}
+
+@media only screen and (min-width:1200px) {
+    .container {
+        width: 35vw;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    .container {
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 70vw;
+    }
+}

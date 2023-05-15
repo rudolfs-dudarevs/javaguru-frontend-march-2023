@@ -24,7 +24,7 @@ body {
     1. Sākot no 1200px ekrāna platuma #header elementa height ir 80px. 
        Uz mazākiem ekrāna izmēriem tas ir 65px.
 
-    2. Sākot no 1200px ekrāna platuma #subtitle elements ir redzams - display: none;
+    2. Sākot no 1200px ekrāna platuma #subtitle elements ir redzams - display: bolck;
        Uz mazākiem ekrāna izmēriem tas ir paslēpts - display: none;
 
     Mainīt main elementa padding, iekš main.css faila veikt izmaiņas:
@@ -34,7 +34,18 @@ body {
 
     Mainīt .product-card elementu platumu, iekš product-card.css veikt izmaiņas:
        
-    4. Sākot no 1200px ekrāna platuma .product-card elementu width ir calc(25% - 30px);
-       Ekrāna izmērā starp 768px un 1200px .product-card elementu witdh ir calc(50% - 30px);
-       Uz mazākiem ekrāna izmēriem .product-card elementu width ir 100%;
+    4. Sākot no 1200px ekrāna platuma .product-card elementu platums - width: calc(25% - 30px);
+       Ekrāna izmērā starp 768px un 1200px .product-card platums - witdh: calc(50% - 30px);
+       Uz mazākiem ekrāna izmēriem .product-card platums - width: 100%;
+
+      *calc() metode mums ļauj piešķirt aprēķinātu izmēru.
+      Mums ir iestatīta atstarpe iekš .container elementa jeb gap 30px platumā.
+      Tas nozīmē, ka piešķirot 4 .product-card elementiem platumu 25%, kopsumā tie aizņems 100%, 
+      bet šeit nav iekļautas 30px atstarpes starp kartiņām - rezultātā 4 kartiņas neielīdīs vienā rindā.
+      Iestatot .product-card width kā calc(25% - 30px) mēs panākam, 
+      ka kartiņas platums būs par 30px mazāks kā 25% un visas 4 kartiņas ielīdīs vienā rindā, 
+      šādi ņemot vērā 30px atstarpes izmēru.
+
+      * svarīgi pierakstīt pareizi ar atstarpēm - calc(25% - 30px) nevis calc(25%-30px)
+
 */

@@ -1,0 +1,42 @@
+.list-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+
+.list-item {
+  min-width: 300px;
+  padding: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+}
+
+.list-item h2 {
+  font-size: 1.2rem;
+  color: rebeccapurple;
+}
+
+.list-item p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: darkslategrey;
+}
+
+.list-item ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: orangered;
+}
+
+.title {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
