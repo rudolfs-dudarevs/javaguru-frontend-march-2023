@@ -42,25 +42,37 @@ console.log(dogBreedList);
                 .then(data => renderDogImg(data))
                 .catch(error => alert(error));
 */
-
 const apiURL = "https://dog.ceo/dog-api/";
 const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
 
 const renderDogBreedList = () => {
-  // 1)
+  dogBreedList.forEach((breed) => {
+    const newOption = document.createElement("option");
+    newOption.value = breed.value;
+    newOption.innerHTML = `${breed.name}`;
+    dogSelector.append(newOption);
+  });
 };
 
 const renderDogImg = (data) => {
-  // 2)
+  const newPhoto = document.createElement("img");
+  newPhoto.classList.add("dog-image");
+  newPhoto.src = data.message;
+  dogImg.innerHTML = "";
+  dogImg.append(newPhoto);
 };
 
 const getDogImg = () => {
-  // 3)
+  let breedUrl = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+  fetch(breedUrl)
+    .then((response) => response.json())
+    .then((data) => renderDogImg(data))
+    .catch((error) => alert(error));
 };
 
 renderDogBreedList();
-
+getDogImg();
 // Izveidojam notikuma klausītāju uz "change" notikumu, kas izsauks funkciju getDog img un pieprasīs no API datus
 // un pēc tam izsauks funkciju renderDogImg(), lai izveidotu <img> elementu
 // "change" notikums tiek izsaukt tiklīdz <select> elementa vērtība mainās jeb izvēloties jaunu šķirni tiek izsaukta funkcija getDogImg.
