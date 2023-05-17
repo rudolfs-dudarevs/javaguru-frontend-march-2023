@@ -1,8 +1,36 @@
 .dog-selector {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
+  border-color: var(--primary);
+  border-width: 2.5px;
+  border-style: inset;
+  font-weight: bold;
+}
+
+.dog-selector:focus {
+  box-shadow: none;
 }
 
 .dog-img {
-    
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dog-img img {
+    width: 80%;
+  }
+  .dog-selector {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .dog-img img {
+    width: 100%;
+  }
+  .dog-selector {
+    width: 100%;
+  }
 }
