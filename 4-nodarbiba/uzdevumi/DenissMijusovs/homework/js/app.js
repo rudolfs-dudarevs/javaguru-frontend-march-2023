@@ -2,7 +2,7 @@
 // Rezultatam jāizskatās kā example.jpg redzamajam sarkastam.
 
 // 1. Aizpilkdīts cvList masīvu ar 4 brīvi izvēlētu personu/tēlu CV objektiem (nav jābūt reāliem piemēriem).
-//    CV objekti satur īpašības: 
+//    CV objekti satur īpašības:
 //       -- firstName (string)
 //       -- lastName (string)
 //       -- phoneNr (number)
@@ -22,7 +22,7 @@
 //            <li class="text">${elements.workExperiences[0]}</li>
 //            <li class="text">${elements.workExperiences[1]}</li>
 //            ...
-//        </ul>           
+//        </ul>
 //     - katrs div elements satur <ul></ul> elementu, jeb sarakstu ar languages masīva objektu vērtībām:
 //        <p class="subtitle">Languages</p>
 //        <ul>
@@ -37,12 +37,118 @@
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+const denissMijusovs = {
+  firstName: "Deniss",
+  lastName: "Mijusovs",
+  email: "dmij*****@gmail.com",
+  telNr: 23000000,
+  workExperience: ["McDonalds", "Atea", "Izoterms", "ON24"],
+  languages: {
+    lv: {
+      name: "Latviešu",
+      level: "Izcili",
+    },
+    rus: {
+      name: "Krievu",
+      level: "Native",
+    },
+    eng: {
+      name: "Angļu",
+      level: "Ļoti labi",
+    },
+  },
+};
+
+const aigaBerze = {
+  firstName: "Aiga",
+  lastName: "Berze",
+  email: "aber*****@gmail.com",
+  telNr: 27777777,
+  workExperience: ["Rimi", "Drogas", "CV", "Bite"],
+  languages: {
+    lv: {
+      name: "Latviešu",
+      level: "Native",
+    },
+    rus: {
+      name: "Krievu",
+      level: "pamatzināšanas",
+    },
+    eng: {
+      name: "Angļu",
+      level: "Labi",
+    },
+  },
+};
+const ingaIvanova = {
+  firstName: "Inga",
+  lastName: "Ivanova",
+  email: "ingaiv*****@inbox.lv",
+  telNr: 29999999,
+  workExperience: ["Lido", "Lidl", "MC2", "Sportland"],
+  languages: {
+    lv: {
+      name: "Latviešu",
+      level: "Labi",
+    },
+    rus: {
+      name: "Krievu",
+      level: "Native",
+    },
+    eng: {
+      name: "Angļu",
+      level: "vidēji",
+    },
+  },
+};
+const polinaSmith = {
+  firstName: "Polina",
+  lastName: "Smith",
+  email: "psmit***@gmail.com",
+  telNr: 3445675545,
+  workExperience: ["LMT", "IKEA", "Google", "Twitter"],
+  languages: {
+    lv: {
+      name: "Latviešu",
+      level: "A1",
+    },
+    rus: {
+      name: "Krievu",
+      level: "A1",
+    },
+    eng: {
+      name: "Angļu",
+      level: "Native",
+    },
+  },
+};
+
+const cvList = [denissMijusovs, aigaBerze, ingaIvanova, polinaSmith];
 
 const appendListElements = () => {
-    listContainer.innerHTML = "";
+  listContainer.innerHTML = "";
 
-    cvList.forEach(() => {
-        
-    })
-}
+  cvList.forEach((item, i) => {
+    const listItem = `<div class="list-item">
+    <h2 class="title">Name: ${item.firstName} ${item.lastName}</h2>
+    <p class="text">PhoneNr.: ${item.telNr}</>
+    <p class="text">Email: ${item.email}</>
+    <p class="subtitle">Work experience</p>
+       <ul>
+           <li class="text">${item.workExperience[0]}</li>
+           <li class="text">${item.workExperience[1]}</li>
+           <li class="text">${item.workExperience[2]}</li>
+           <li class="text">${item.workExperience[3]}</li>
+       </ul>
+    <p class="subtitle">Languages</p>
+         <ul>
+             <li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
+             <li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
+             <li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
+        </ul>
+    </div>`;
+    listContainer.innerHTML += listItem;
+  });
+};
+
+generateListBtn.addEventListener("click", appendListElements);

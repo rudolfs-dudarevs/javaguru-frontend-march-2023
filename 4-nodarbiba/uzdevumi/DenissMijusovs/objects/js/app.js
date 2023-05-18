@@ -14,7 +14,7 @@
 //    -- languages
 //    Languages objektā ir 3 īpašības ar nosaukumiem lv, rus, eng, piem.
 //    Katra no languages objekta īpašībām ir objekts, kas satur 2 īpašības - name, level.
-//    
+//
 //    languages: {
 //          lv: {
 //             name: "Latviešu",
@@ -22,7 +22,7 @@
 //          },
 //          rus: {
 //              ...
-//          }, 
+//          },
 //          eng: {
 //              ...
 //          }
@@ -32,5 +32,33 @@
 // 7. Izvadīt konsolē CV objekta īpašības workExperience 2 elementu (index 1).
 // 8. Izvadīt konsolē CV objekta īpašības languages objekta eng īpašības name un level apvienojumu.
 //    -- piem., vardsUzvards.languages.lv objekta īpašību apvienojums izskatītos šādi:
-//       Latviešu - Native 
+//       Latviešu - Native
 //       Un tiktu panākta ar string literal pierakstu `${vardsUzvards.languages.lv.name} - ${vardsUzvards.languages.lv.level}`
+
+const denissMijusovs = {
+  firstName: "Deniss",
+  lastName: "Mijusovs",
+  email: "dmij*****@gmail.com",
+  telNr: 23000000,
+  workExperience: ["McDonalds", "Atea", "Izoterms", "ON24"],
+  languages: {
+    lv: {
+      name: "Latviešu",
+      level: "Izcili",
+    },
+    rus: {
+      name: "Krievu",
+      level: "Native",
+    },
+    eng: {
+      name: "Angļu",
+      level: "Ļoti labi",
+    },
+  },
+};
+
+console.log(denissMijusovs.firstName + " " + denissMijusovs.lastName);
+console.log(denissMijusovs.workExperience[1]);
+console.log(
+  `${denissMijusovs.languages.eng.name} - ${denissMijusovs.languages.eng.level}`
+);

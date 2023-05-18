@@ -2,9 +2,7 @@
 @import "./reset.css";
 @import "./colors.css";
 @import "./header.css";
-@import "./buttons.css";
 @import "./main.css";
-@import "./product-card.css";
 
 * {
     box-sizing: border-box;
@@ -16,4 +14,5 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: bisque;
 }

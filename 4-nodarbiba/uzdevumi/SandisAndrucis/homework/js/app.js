@@ -37,12 +37,119 @@
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+const cvList = [
+    {
+        firstName: "Dita",
+        lastName: "Dzene",
+        phoneNr: 1234567,
+        email: "dita.dzene@gmail.com",
+        workExperience: ["SIA Neotech", "SIA TerGravit", "SIA Jumis", "SIA Accenture"],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Krievu",
+                level: "Fluent"
+            },
+            eng: {
+                name: "Angļu",
+                level: "Intermediate"
+            }
+        }
+    },
+    {
+        firstName: "Laura",
+        lastName: "Zemene",
+        phoneNr: 1234567,
+        email: "laura.zemene@gmail.com",
+        workExperience: ["SIA Stenders", "SIA PipeLife", "SIA Rimi", "SIA Wordingday"],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Krievu",
+                level: "Beginner"
+            },
+            eng: {
+                name: "Angļu",
+                level: "Intermediate"
+            }
+        }
+    },
+    {
+        firstName: "Artis",
+        lastName: "Lācis",
+        phoneNr: 1234567,
+        email: "artis.lacis@gmail.com",
+        workExperience: ["SIA Gauja", "SIA Daugava", "SIA Venta", "SIA Abava"],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Krievu",
+                level: "Beginner"
+            },
+            eng: {
+                name: "Angļu",
+                level: "Fluent"
+            }
+        }
+    },
+    {
+        firstName: "Laima",
+        lastName: "Strada",
+        phoneNr: 1234567,
+        email: "laima.strada@gmail.com",
+        workExperience: ["SIA Kurzeme", "SIA Vidzeme", "SIA Latgale", "SIA Zemgale"],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Beginner"
+            },
+            rus: {
+                name: "Krievu",
+                level: "Fluent"
+            },
+            eng: {
+                name: "Angļu",
+                level: "Native"
+            }
+        }
+    }
+];
 
 const appendListElements = () => {
     listContainer.innerHTML = "";
-
-    cvList.forEach(() => {
-        
-    })
+    listContainer.classList.add('list-container-show');
+    cvList.forEach((item) => {
+        const listEl = `
+            <div class="list-item">
+                <h2 class="title">${item.firstName} ${item.lastName}</h2>
+                <p class="text">PhoneNr.: ${item.phoneNr}</p>
+                <p class="text">Email: ${item.email}</p>
+                <p class="subtitle">Work experience</p>
+                <ul>
+                    <li class="text">${item.workExperience[0]}</li>
+                    <li class="text">${item.workExperience[1]}</li>
+                    <li class="text">${item.workExperience[2]}</li>
+                    <li class="text">${item.workExperience[3]}</li>
+                </ul>
+                <p class="subtitle">Languages</p>
+                <ul>
+                    <li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
+                    <li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
+                    <li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
+                </ul>
+            </div>
+        `;
+        listContainer.innerHTML += listEl;
+    });
 }
+
+generateListBtn.addEventListener("click", appendListElements);
