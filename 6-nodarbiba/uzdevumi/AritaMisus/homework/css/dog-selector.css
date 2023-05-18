@@ -1,8 +1,29 @@
 .dog-selector {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 10px auto;
+  border: 2px solid var(--secondary);
 }
 
 .dog-img {
-    
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dog-image {
+  width: 50%;
+  border: 25px dotted var(--primary);
+}
+
+@media only screen and (max-width: 800px) {
+  .dog-selector {
+    width: 100%;
+  }
+
+  .dog-image {
+    width: 100%;
+  }
 }

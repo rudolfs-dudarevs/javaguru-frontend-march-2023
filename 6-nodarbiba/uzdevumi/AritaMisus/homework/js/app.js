@@ -9,8 +9,7 @@
     Izmantosim API https://dog.ceo/dog-api/
     dogBreedList.js piejams saraksts (masīvs) ar suņu šķirnēm.
     Tā kā iekš HTML dogBreedList.js ir iekļauts tieši rindiņu pirms app.js faila - šis saraksts ar suņu šķirnēm
-    ir pieejams globāli. Jeb varam to izmantot šeit, iekš app.js ar tā masīva nosaukumu "dogBreedList".
-*/
+    ir pieejams globāli. Jeb varam to izmantot šeit, iekš app.js ar tā masīva nosaukumu "dogBreedList". */
 console.log(dogBreedList);
 /*
     1)  Izveidot dropdown ar suņu šķirnēm
@@ -22,8 +21,7 @@ console.log(dogBreedList);
         - Iekš funkcijas renderDogBreedList() izmantojot forEach((breed) => {}), lai iterētu caur dogBreedList masīvu
           un ar innerHTML pievienotu dogSelector elementam nepieciešamos <option> elementus:
             `<option value=${breed.value}>${breed.name}</option>`
-        - tieši pēc renderDogBreedList() funkcijas deklerācijas, izaucam šo pašu funkciju - <select> elements tiek aizpildīts ar <option> elementiem.
-    
+        - tieši pēc renderDogBreedList() funkcijas deklerācijas, izaucam šo pašu funkciju - <select> elements tiek aizpildīts ar <option> elementiem.  
     2)  Izveidot funkciju suņa bildes attēlošanai:
 
         - izvedojam funkciju renderDogImg(data) kurai kā parametrs tik padots no API atgrieztais objekts ar suņa datiem un attēla url.
@@ -43,20 +41,37 @@ console.log(dogBreedList);
                 .catch(error => alert(error));
 */
 
-const apiURL = "https://dog.ceo/dog-api/";
+const apiURL = "https://dog.ceo/api/";
 const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
 
+// 1)
+
 const renderDogBreedList = () => {
-  // 1)
+  dogBreedList.forEach((breed) => {
+    const dogBreedEl = `<option value=${breed.value}>${breed.name}</option>`;
+    dogSelector.innerHTML += dogBreedEl;
+  });
 };
+
+renderDogBreedList();
+
+// 2)
 
 const renderDogImg = (data) => {
-  // 2)
+  dogImg.innerHTML = `<img src=${data.message} class="dog-image">`;
+
+  return dogImg;
 };
 
+// 3)
+
 const getDogImg = () => {
-  // 3)
+  let breedUrl = `${apiURL}breed/${dogSelector.value}/images/random`;
+  fetch(breedUrl)
+    .then((response) => response.json())
+    .then((data) => renderDogImg(data))
+    .catch((error) => alert(error));
 };
 
 renderDogBreedList();
