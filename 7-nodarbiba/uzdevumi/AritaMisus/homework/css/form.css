@@ -1,0 +1,23 @@
+.form {
+    width: 30vw;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+.valid {
+    border: 2px solid #91ee91;
+}
+
+.valid:focus {
+    border-color: #91ee91;
+    box-shadow: 0 0 4px #91ee91;
+}
+
+.invalid {
+    border: 2px solid#ff0000;
+}
+
+.invalid:focus {
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 4px #ff0000;
+}

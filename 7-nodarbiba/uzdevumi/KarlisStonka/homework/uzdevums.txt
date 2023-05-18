@@ -1,0 +1,40 @@
+HTML - index.html
+1. Izveidot form elementu, pievienot class atribūtu ar vērtību form (class="form").
+2. Ievadforma satur šādus input lauku:
+    - username
+    - email
+    Ievadlauki nesatur validācijas atribūtus.
+    Ievadlauki obligāti satur name atribūtu.
+
+JavaScript -  app.js
+3.  izveidot objektu validationRules, kas saturēs 2 īpašības - username, email. 
+   Katra īpašība ir funkcijas, kas veic pārbaudi lauka vērtībai un atgriež true vai false - lauks ir valīds vai nav.
+    - username tiek pārbaudīts, ka lauks nav tukšs jeb satur vērtību.
+    - email tiek pārbaudīta regEx izteiksme /^.+@gmail.com$/
+
+3. Piesaistīt input laukiem notikumu klausītāju, kas uz "input" notikumu atiestatīs(restos) lauka validācijas stāvokli.
+    - input.addEventListener("input", resetValidationState)
+4. Piesaistīt input laukiem notikumu klausītāju, kas uz "blur" notikumu veiks lauka vērtības validātiju.
+    - input.addEventListener("blur", validateField)
+
+5. Izveidot funkciju resetValidationState, kas noņems kļūdas paziņojumsuun validācijas stāvokli no input lauka.
+6. Izveidot funkciju validateField, kas izpildīs attiecīgā input lauka pārbaudi.
+
+7. Izveidot funkciju setFieldInvalid, kas iestatīs input stāvokli kā invalid.
+    - attiecīgajam input laukam pievienot klasi "invalid"
+8. Izveidot funkciju setFieldValid, kas iestatīs input stāvokli kā valid.
+    - attiecīgajam input laukam pievienot klasi "valid"
+
+9. Piesaistīt formas "submit" notikumam funkciju handleFormSubmit:
+    - form.addEventListener("submit", handleFormSubmit)
+10. Izveidot funkciju handleFormSubmit, kas uz submiot pogas klikšķi pārbaudīs formas lauku vērtības un nosūtīt tās uz "https://httpbin.org/post".
+    - der copy/paste no lekcijas piemēra
+
+11. Pārbaudīt validācijas darbību ievadot vērtības un pametot lauku.
+12. Pārbaudīt validācijas darbību uz submti pogas klikšķa.
+13. Pārliecināties par datu nosūtīšanu developer tools network cilnē.
+
+
+PĒC IZVĒLES:
+- pievienot vēl brīvi izvēletus laukus un tos validēt.
+- atrast/izveidot RegEx priekš email lauka validācijas, kas atbilst reālākām dzīves situācijām. (pašlaik validējam, lai būtu gmail epasts)
