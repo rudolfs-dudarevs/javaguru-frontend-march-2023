@@ -18,6 +18,21 @@ const generateListBtn = document.getElementById("generate-list-btn");
 const backgroundColors = ["blueviolet", "darkorange", "crimson", "darkmagenta", "deeppink", "plum"];
 const boxList = ["Box 1", "Box 2", "Box 3"];
 
+boxList.push ("Box4")
+boxList.push ("Box5")
+boxList.push ("Box6")
+
+console.log(boxList)
+
+listContainer.classList.add("list-container-show")
+
+
 const appendListElements = () => {
-    
+    boxList.forEach((array, index) => {
+        const box = `<div class="list-item" style="background-color: ${backgroundColors[index]}">${array}</div>`;
+        listContainer.innerHTML += box;
+    });
+ 
 }
+
+generateListBtn.addEventListener("click", appendListElements);
