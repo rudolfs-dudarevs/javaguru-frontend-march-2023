@@ -1,4 +1,6 @@
 .btn-primary {
+    margin:auto;
+    display:block;
     background-color: transparent;
     border: 2px solid var(--primary);
     color: var(--primary)

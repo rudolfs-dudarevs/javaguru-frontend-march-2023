@@ -12,15 +12,35 @@
         <body>
             <header id="header">
                 <h1 class="title">
-                    Vārds Uzvārds
+                    Sandis Andrucis
                     <div class="subtitle">
                         Frontend developer
                     </div>
                 </h1>
             </header>
             <main>
-
+                <form class="form" id="user-form">
+                    <label class="form-label" for="username">Username
+                    </label>
+                    <input class="form-control" id="username" name="username"/>
+                    <p class="error mt-1 invisible" id="userError">Please enter your prefered username</p>
+                    <label class="form-label mt-3" for="email">Email
+                    </label>
+                    <input class="form-control" id="email" name="email"/>
+                    <p class="error mt-1 invisible" id="emailError">Please enter a valid email address</p>
+                    <label class="form-label mt-3" for="password">Password
+                    </label>
+                    <input class="form-control" id="password" name="password" type="password"/>
+                    <p class="error mt-1 invisible" id="passwordError">Password must contain lower and upper case letters and a number</p>
+                    <label class="form-label mt-3" for="passwordCheck">Password confirmation
+                    </label>
+                    <input class="form-control" id="passwordCheck" name="passwordCheck" type="password"/>
+                    <p class="error mt-1 invisible" id="passwordCheckError">Password confirmation must be identical to password</p>
+                    <label class="form-label mt-2" for="showPw">Show password</label>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <button class="btn btn-primary mt-3" type="submit">Submit</button>
+                </form>
             </main>
-        <script src="./js/no-comments.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>
