@@ -12,6 +12,7 @@
     ir pieejams globāli. Jeb varam to izmantot šeit, iekš app.js ar tā masīva nosaukumu "dogBreedList".
 */
 console.log(dogBreedList);
+fetch("https://dog.ceo/api/breeds/list/all")
 /*
     1)  Izveidot dropdown ar suņu šķirnēm
     
@@ -43,20 +44,29 @@ console.log(dogBreedList);
                 .catch(error => alert(error));
 */
 
-const apiURL = "https://dog.ceo/dog-api/";
+// const apiURL = "https://dog.ceo/dog-api/";
+const apiURL = "https://dog.ceo/api/breed/";
 const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
 
 const renderDogBreedList = () => {
-  // 1)
+  dogSelector.innerHTML = "";
+  dogBreedList.forEach((breed) => {
+    const optionEl = `<option value=${breed.value}>${breed.name}</option>`;
+    dogSelector.innerHTML += optionEl;
+  })
 };
 
 const renderDogImg = (data) => {
-  // 2)
+  dogImg.innerHTML = `<img src=${data.message} class="dog-img">`;
 };
 
 const getDogImg = () => {
-  // 3)
+  const breedUrl = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`
+  fetch(breedUrl)
+  .then(response => response.json())
+  .then(data => renderDogImg(data))
+  .catch(error => alert(error));
 };
 
 renderDogBreedList();

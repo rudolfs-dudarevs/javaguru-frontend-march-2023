@@ -1,8 +1,28 @@
 .dog-selector {
-    width: 50%;
-    margin: 0 auto;
+    width: 40vw;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: var(--black);
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: none;
+}
+
+.dog-selector:focus {
+    box-shadow: none;
 }
 
 .dog-img {
-    
+    width: 40vw;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0px  auto;
+}
+
+@media only screen and (max-width: 960px) {
+    .dog-selector, .dog-img {
+        width: 90vw;
+}
 }
