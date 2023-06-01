@@ -42,22 +42,30 @@ console.log(dogBreedList);
                 .then(data => renderDogImg(data))
                 .catch(error => alert(error));
 */
-
 const apiURL = "https://dog.ceo/dog-api/";
 const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
 
-const renderDogBreedList = () => {
-  // 1)
-};
-
+const renderDogBreedList =() => {
+  dogBreedList.forEach((breed) => {
+      let option = document.createElement('option');
+      option.value = breed.value;
+      option.text = breed.name;
+      dogSelector.appendChild(option);
+  });
+}
 const renderDogImg = (data) => {
-  // 2)
-};
+  dogImg.innerHTML = `<img src=${data.message} class="dog-image">`;
+}
 
-const getDogImg = () => {
-  // 3)
-};
+const getDogImg= () => {
+  let breedUrl = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+  fetch(breedUrl)
+      .then(response => response.json())
+      .then(data => renderDogImg(data))
+      .catch(error => console.error(error));
+}
+
 
 renderDogBreedList();
 
