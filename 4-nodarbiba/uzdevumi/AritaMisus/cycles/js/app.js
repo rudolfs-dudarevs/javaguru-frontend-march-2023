@@ -11,13 +11,31 @@
 // 5. Katrā iterācijā izveidoto string mainīgo pievienot #list-container elementa innerHTML īpašībai.
 // 6. funkciju appendListElements piesaistīts pogas #generate-list-btn klikšķim/
 
-
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const backgroundColors = ["blueviolet", "darkorange", "crimson", "darkmagenta", "deeppink", "plum"];
-const boxList = ["Box 1", "Box 2", "Box 3"];
+const backgroundColors = [
+  "blueviolet",
+  "darkorange",
+  "crimson",
+  "darkmagenta",
+  "deeppink",
+  "plum",
+];
+const boxList = ["Box 1", "Box 2", "Box 3", "Box 4", "Box 5", "Box 6"];
 
 const appendListElements = () => {
-    
-}
+  listContainer.innerHTML = "";
+  listContainer.classList.add("list-container-show");
+
+  boxList.forEach((box, index) => {
+    const boxEl = `
+        <div class="list-item" style="background-color: ${backgroundColors[index]}">
+        ${box}
+        </div>
+    `;
+    listContainer.innerHTML += boxEl;
+  });
+};
+
+generateListBtn.addEventListener("click", appendListElements);
