@@ -1,8 +1,13 @@
 .dog-selector {
-    width: 50%;
-    margin: 0 auto;
+  margin: 15px 0;
+  background-color: blanchedalmond;
+  font-weight: bold;
+}
+
+.dog-selector:hover {
+  font-size: 25px;
 }
 
 .dog-img {
-    
+  margin: 25px 0;
 }
