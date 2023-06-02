@@ -1,0 +1,31 @@
+.footer {
+    height: 200px;
+    padding: 50px;
+    color: white;
+    background-color: var(--secondary);
+}
+
+.footer__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__content {
+    width: 300px;
+    display: flex;
+    gap: 30px;
+    margin: 0 0 0 150px;
+    justify-content: space-between;
+}
+
+.footer__link {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: var(--primary)
+}

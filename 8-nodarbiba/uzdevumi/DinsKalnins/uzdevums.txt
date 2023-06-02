@@ -1,0 +1,22 @@
+Vadoties pēc lekcijas prauga, izveidot React komponenti Header.jsx un attiecīgo Header.css iekš src/components mapes.
+Šīs komponentes izstrādei izmantot jūsu veidoto header elementu no iepriekšējām lekcijām.
+
+
+izvēlēties vai nu jau konfigurēto create-react-app vai pašrocīgi uzstādīt konfigurēt react
+
+BŪTISKI:
+1. Ja vēlamies iedarbināt kādu no lekcijas piemēriem, temrināli navigējam uz konkrētā piemēra mapi un izpildām:
+npm install
+
+node_modules mape neatrodās iekš mūsu GitHub repsoitory, to ir nepieciešams izveidot no jauna uzstādot visas nepieciešamās pakotnes ar npm install.
+
+2. Pievērst uzmanību, ka class atribūts iekš React nevar tikt izmantots - React analogs šim atribūtam ir className.
+CSS klašu nosaukumus veidot pēc BEM metodoloģijas, piem., .header__title un header__subtitle.
+
+Iepazīties padziļināti ar BEM pieraksta metodoloģiju:
+https://gist.github.com/bigsergey/a49caf3ca08feec42cf8
+
+3. Savā mājasdarba mapē obligāti iekļaujam .gitignore failu, kurā ir norādīti faili, ko neiekļaut mūsu commitos:
+
+node_modules
+package-lock.json

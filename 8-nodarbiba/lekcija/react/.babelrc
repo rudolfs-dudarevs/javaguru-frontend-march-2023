@@ -1,0 +1,13 @@
+{
+    // Presets sadaļā norādam jau konfigurētas pluginus kopas, kas nodrošinās vēlammās koda pārveides.
+    // Šajā gadījumā mēs vēlamies atbalstīt ES5+(preset-env) un React(preset-react) koda pārveidi,
+    // Dotie presets apkopo sevī visus nepieciešamos plugins un to konfigurācijas, lai to izpildītu.
+    "presets": [
+        "@babel/preset-env", // ES2015+ syntax
+        "@babel/preset-react" //for react
+    ],
+    // Plugins sadaļā varam papildus norādīt vēl citus plugins un tos atsevišķi konfigurēt.
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
