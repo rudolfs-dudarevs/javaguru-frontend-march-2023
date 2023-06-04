@@ -48,15 +48,28 @@ const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
 
 const renderDogBreedList = () => {
-  // 1)
+  dogBreedList.forEach((breed) => {
+    const dogOptions = document.createElement("option");
+    dogOptions.value = breed.value;
+    dogOptions.innerText = `${breed.name}`;
+    dogSelector.append(dogOptions);
+  });
 };
 
 const renderDogImg = (data) => {
-  // 2)
+  const dogPic = document.createElement("img");
+  dogPic.src = data.message;
+  dogPic.classList.add("dog-image");
+  dogImg.innerHTML = '';
+  dogImg.append(dogPic);
 };
 
 const getDogImg = () => {
-  // 3)
+  const breedUrl = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+  fetch(breedUrl)
+    .then(response => response.json())
+    .then(data => renderDogImg(data))
+    .catch(error => alert(error));
 };
 
 renderDogBreedList();
