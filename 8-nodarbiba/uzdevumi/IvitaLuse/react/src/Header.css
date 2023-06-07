@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  color: #2b2b2b;
+  box-shadow: 0px 1px 4px #2ad691;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 2.1px;
+}
+
+.header__subtitle {
+  font-size: 1rem;
+  color: #2ad691;
+  margin: 0.3rem 0 0;
+}
