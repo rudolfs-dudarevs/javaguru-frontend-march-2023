@@ -12,6 +12,7 @@
     ir pieejams globāli. Jeb varam to izmantot šeit, iekš app.js ar tā masīva nosaukumu "dogBreedList".
 */
 console.log(dogBreedList);
+
 /*
     1)  Izveidot dropdown ar suņu šķirnēm
     
@@ -23,6 +24,7 @@ console.log(dogBreedList);
           un ar innerHTML pievienotu dogSelector elementam nepieciešamos <option> elementus:
             `<option value=${breed.value}>${breed.name}</option>`
         - tieši pēc renderDogBreedList() funkcijas deklerācijas, izaucam šo pašu funkciju - <select> elements tiek aizpildīts ar <option> elementiem.
+    
     
     2)  Izveidot funkciju suņa bildes attēlošanai:
 
@@ -48,15 +50,22 @@ const dogSelector = document.getElementById("dogSelector");
 const dogImg = document.getElementById("dogImg");
 
 const renderDogBreedList = () => {
-  // 1)
+  dogBreedList.forEach((breed) => {
+    let breedList = `<option value=${breed.value}>${breed.name}</option>`;
+    dogSelector.innerHTML += breedList;
+  });
 };
 
 const renderDogImg = (data) => {
-  // 2)
+  dogImg.innerHTML = `<img src=${data.message} class="dog-image">`;
 };
 
 const getDogImg = () => {
-  // 3)
+  let breedUrl = `https://dog.ceo/api/breed/${dogSelector.value}/images/random`;
+  fetch(breedUrl)
+    .then((response) => response.json())
+    .then((data) => renderDogImg(data))
+    .catch((error) => alert(error));
 };
 
 renderDogBreedList();
