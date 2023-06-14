@@ -1,15 +1,23 @@
-.post-card {
+.user-card {
   font-size: 18px;
   padding: 20px;
   border: 2px solid var(--black);
   border-radius: 4px;
 }
 
-.post-card__title {
+.user-card__name {
+  font-weight: bold;
+}
+
+.user-card__email {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.post-card__text {
+.user-card__website {
+  font-style: italic;
+}
+
+.user-card__text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

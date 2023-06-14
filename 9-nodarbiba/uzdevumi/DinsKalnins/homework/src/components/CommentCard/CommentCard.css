@@ -1,15 +1,19 @@
-.post-card {
+.comment-card {
   font-size: 18px;
   padding: 20px;
   border: 2px solid var(--black);
   border-radius: 4px;
 }
 
-.post-card__title {
+.comment-card__name {
+  font-weight: bold;
+}
+
+.comment-card__text {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.post-card__text {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.comment-card__email {
+  font-style: italic;
 }
