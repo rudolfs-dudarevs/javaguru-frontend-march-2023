@@ -1,0 +1,15 @@
+.comment-card {
+  font-size: 18px;
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+}
+
+.comment-card__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comment-card__text {
+  /* some style */
+}
