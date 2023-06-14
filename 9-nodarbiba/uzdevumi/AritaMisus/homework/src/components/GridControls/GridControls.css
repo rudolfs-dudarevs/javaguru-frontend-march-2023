@@ -1,22 +1,30 @@
 .grid-controls {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .grid-controls__button {
-    height: 40px;
-    background: var(--white);
-    padding: 0 15px;
-    font-weight: bold;
-    border-radius: 4px;
-    border: 2px solid var(--black);
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
+  height: 40px;
+  background: var(--white);
+  padding: 0 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 3px solid var(--black);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .grid-controls__button:hover {
-    color: var(--white);
-    background-color: var(--primary);
-    border-color: var(--primary);
-    outline: none;
+  color: var(--primary);
+  background-color: var(--white);
+  border-color: var(--primary);
+  outline: none;
+}
+
+.grid-controls__button:focus,
+.grid-controls__button:active {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  outline: none;
 }

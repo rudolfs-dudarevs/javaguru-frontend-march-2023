@@ -1,0 +1,23 @@
+.user-card {
+  font-size: 18px;
+  padding: 20px;
+  border: 3px dotted var(--grey);
+  border-radius: 4px;
+}
+
+.user-card__name {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-card__email {
+  color: var(--grey);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.user-card__website {
+  color: var(--website);
+  font-weight: bold;
+}
