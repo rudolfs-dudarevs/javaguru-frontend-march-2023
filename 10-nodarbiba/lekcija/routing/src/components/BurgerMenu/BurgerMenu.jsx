@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import "./BurgerMenu.css";
 
 const BurgerMenu = () => {
-  return <FoldZone imagePosition="right"></FoldZone>;
+  return (
+    <Menu right>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+    </Menu>
+  );
 };
 
 export default BurgerMenu;

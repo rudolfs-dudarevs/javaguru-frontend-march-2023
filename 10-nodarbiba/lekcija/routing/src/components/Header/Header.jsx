@@ -6,17 +6,12 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="title">
+      <h1 className="header__title">
         Vārds Uzvārds
-        <div className="subtitle">Frontend developer</div>
+        <div className="header__subtitle">Frontend developer</div>
       </h1>
-      <div className="menu">
+      <div className="header__menu">
         <BurgerMenu />
-      </div>
-      <div className="navigation">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/test">Test</Link>
       </div>
     </header>
   );

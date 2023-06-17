@@ -11,28 +11,28 @@
   color: var(--black);
 }
 
-.title {
+.header__title {
   font-weight: bold;
   font-size: 1.7rem;
   letter-spacing: 2.1px;
 }
 
-.subtitle {
+.header__subtitle {
   font-size: 1rem;
   color: var(--primary);
   margin: 0.3rem 0 0;
 }
 
-.navigation {
+.header__navigation {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .menu {
+  .header__menu {
     display: none;
   }
 
-  .navigation {
+  .header__navigation {
     display: block;
   }
 }
