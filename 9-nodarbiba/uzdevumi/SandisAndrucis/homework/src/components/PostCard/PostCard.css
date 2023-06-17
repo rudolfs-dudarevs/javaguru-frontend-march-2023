@@ -11,5 +11,5 @@
 }
 
 .post-card__text {
-    /* some style */
+    text-align: justify;
 }

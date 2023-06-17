@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.count {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary);
+}

@@ -1,15 +1,15 @@
 .post-card {
-    font-size: 18px;;
-    padding: 20px;
-    border: 2px solid var(--black);
-    border-radius: 4px;
+  font-size: 18px;
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
 }
 
 .post-card__title {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .post-card__text {
-    /* some style */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

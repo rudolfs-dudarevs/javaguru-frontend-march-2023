@@ -1,0 +1,16 @@
+.social-grid {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.social-grid__controls {
+  display: flex;
+  gap: 15px;
+  margin: 30px;
+}
+
+.social-grid__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
