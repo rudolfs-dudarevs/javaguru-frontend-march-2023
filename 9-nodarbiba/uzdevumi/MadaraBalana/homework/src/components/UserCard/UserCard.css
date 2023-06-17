@@ -1,0 +1,19 @@
+.user-card {
+  font-size: 18px;
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+}
+
+.user-card__name {
+  font-weight: bold;
+}
+
+.user-card__email {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-card__website {
+  font-style: italic;
+}
