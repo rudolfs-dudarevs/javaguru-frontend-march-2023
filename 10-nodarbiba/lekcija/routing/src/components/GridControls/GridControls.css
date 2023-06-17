@@ -1,0 +1,16 @@
+.grid-controls__button {
+  height: 40px;
+  background-color: var(--white);
+  padding: 0 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.grid-controls__button:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
