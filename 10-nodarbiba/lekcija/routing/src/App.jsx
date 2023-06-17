@@ -1,6 +1,3 @@
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import SocialGrid from "./components/SocialGrid/SocialGrid";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
