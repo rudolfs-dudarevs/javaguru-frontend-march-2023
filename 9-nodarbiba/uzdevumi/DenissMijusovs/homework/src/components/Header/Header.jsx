@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             <h1 className="title">
-                Vārds Uzvārds
+                Deniss Mijusovs
                 <div className="subtitle">
                     Frontend developer
                 </div>
