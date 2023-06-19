@@ -10,7 +10,6 @@
 }
 
 .nav-item {
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -47,7 +46,7 @@
   margin: 0;
   padding: 120px 0;
   color: whitesmoke;
-  background-color: rgba(250, 74, 12, 0.8);
+  background-color: rgba(250, 74, 12, 0.95);
   transition: width 0.3s ease-in-out;
 }
 
@@ -93,6 +92,7 @@
   .nav-item a {
     color: #252b42;
     text-decoration: none;
+    font-weight: 600;
   }
 
   .nav-item li:hover,

@@ -1,12 +1,12 @@
 /* HEADER - style for Mobile */
 
 .header {
-  position: fixed;
+  /* position: fixed; */
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 111px;
   box-sizing: border-box;
 }

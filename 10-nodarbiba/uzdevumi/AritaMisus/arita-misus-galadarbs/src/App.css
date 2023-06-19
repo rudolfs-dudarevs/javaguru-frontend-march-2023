@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Roboto:wght@700&display=swap");
-@import "./style/reset.css";
+@import "../style/reset.css";
 
 #root {
   /* max-width: 1440px; */
@@ -19,6 +19,5 @@ body {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-
   max-width: 1440px;
 }

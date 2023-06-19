@@ -1,0 +1,36 @@
+.btn-primary,
+.btn-secondary {
+  color: white;
+  border-radius: 35px;
+  width: 236px;
+  padding: 16px 0;
+  display: inline;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  text-align: center;
+
+  box-sizing: border-box;
+  margin: 8px 23px;
+  max-height: 68px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #fa4a0c;
+  border: 1px solid #fa4a0c;
+}
+
+.btn-secondary {
+  color: #fa4a0c;
+  background-color: transparent;
+  border: 1px solid #fa4a0c;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-secondary {
+    color: white;
+    border: 1px solid white;
+  }
+}
