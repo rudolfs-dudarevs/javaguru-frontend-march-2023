@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 4rem;
+  padding: 0 2rem;
+  background-color: var(--white);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  height: 3rem;
+  width: auto;
+}
+
+.menu-items a {
+  color: var(--black);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: var(--primary);
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-items {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
