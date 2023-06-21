@@ -18,21 +18,21 @@ const HowAppWorks = () => {
         preTitle="Create an account"
         title="Create/login to an existing account to get started"
         text="An account is created with your email and a desired password"
-        keepOrder={true}
+        keepOrder={false}
       />
       <ProductFeature
         featureImage={Feature2}
         preTitle="Explore varieties"
         title="Shop for your favorites meal as e dey hot."
         text="Shop for your favorite meals or drinks and enjoy while doing it."
-        keepOrder={false}
+        keepOrder={true}
       />
       <ProductFeature
         featureImage={Feature3}
         preTitle="Checkout"
         title="When you done check out and get it delivered."
         text="When you done check out and get it delivered with ease."
-        keepOrder={true}
+        keepOrder={false}
       />
     </div>
   );
