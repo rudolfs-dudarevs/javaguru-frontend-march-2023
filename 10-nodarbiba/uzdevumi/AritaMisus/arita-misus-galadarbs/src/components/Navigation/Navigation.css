@@ -3,6 +3,7 @@
 .navigation {
   margin: 0 25px;
   width: 0%;
+  z-index: 99;
 }
 
 .navigation-list {
@@ -22,7 +23,7 @@
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a:focus {
-  text-decoration: underline;
+  color: #fa4a0c;
 }
 
 .menu {

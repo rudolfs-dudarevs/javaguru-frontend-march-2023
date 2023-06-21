@@ -19,5 +19,5 @@ body {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
