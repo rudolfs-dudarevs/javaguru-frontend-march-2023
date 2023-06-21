@@ -1,0 +1,39 @@
+.FooterWrapper {
+  margin: 3rem 0rem;
+}
+
+.FooterWrapper p {
+  margin-top: 1rem;
+}
+
+.FooterWrapper img.logo {
+  display: none;
+}
+
+.FooterWrapper p {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.SocialWrapper img {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.SocialWrapper img.insta {
+  width: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .FooterWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .FooterWrapper img.logo {
+    display: flex;
+  }
+}

@@ -1,0 +1,71 @@
+.DownloadWrapper {
+  background-image: none;
+  background-color: #252b42;
+  padding-bottom: 7.5rem;
+}
+
+.DownloadWrapper h2 {
+  padding: 0 2rem;
+  font-size: 40px;
+  margin-top: 7.5rem;
+  color: white;
+  top: 0;
+}
+
+.DownloadWrapper h4 {
+  color: #bdbdbd;
+}
+
+.DButtonWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.download-primary {
+  margin-top: 2rem;
+  font-size: 16px;
+  background-color: #fa4a0c;
+  border-radius: 10px;
+  padding: 18px 31px;
+  gap: 10px;
+  color: white;
+  border: none;
+}
+
+.download-secondary {
+  margin-top: 2rem;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 18px 31px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .DownloadWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/download.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32.25rem;
+    width: 100%;
+  }
+
+  .DownloadWrapper h2 {
+    top: 0;
+  }
+  .DownloadWrapper h4 {
+    color: white;
+  }
+
+  button.button-primary,
+  button.button-secondary {
+    font-size: 24px;
+    padding: 1rem 2.65rem;
+    border-radius: 30px;
+  }
+}

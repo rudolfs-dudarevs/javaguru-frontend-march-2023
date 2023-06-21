@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@600&display=swap");
+
+.WorksWrapper {
+  margin-top: 2rem;
+  height: 20rem;
+}
+
+.phoneLeft {
+  max-width: 95%;
+  position: relative;
+  bottom: 150px;
+  left: -60px;
+}
+
+.phoneRight {
+  max-width: 45%;
+  position: relative;
+  bottom: 500px;
+  left: 80px;
+}
+
+.HeadlineWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+hr {
+  width: 100%;
+  background-color: #e4e4e4;
+  height: 2px;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .HeadlineWrapper {
+    margin-top: 4rem;
+    margin-bottom: 30rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 520px;
+    font-size: 44px;
+    color: black;
+  }
+
+  hr {
+    width: 100%;
+    background-color: #e4e4e4;
+    height: 2px;
+    position: relative;
+    top: 390px;
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  .WorksWrapper {
+    display: flex;
+    position: absolute;
+    top: 800px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phoneLeft {
+    width: auto;
+    position: relative;
+    bottom: 0px;
+    left: 300px;
+    z-index: 100;
+  }
+
+  .phoneRight {
+    position: relative;
+    bottom: 30px;
+    left: 70px;
+    z-index: 2;
+  }
+}
