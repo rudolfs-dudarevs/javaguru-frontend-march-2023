@@ -1,0 +1,46 @@
+.btn-primary, .btn-secondary {
+    width:236px;
+    height:68px;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 36px;
+}
+
+.btn-primary {
+    margin-top: 50px;
+    background-color: #FA4A0C;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    margin-top: 17px;
+    margin-bottom: 253px;
+    background-color: transparent;
+    border:solid #FA4A0C 1px;
+    color:#FA4A0C;
+}
+
+.btn-primary:hover, .btn-secondary:hover{
+    background-color:lightgreen;
+    color:purple;
+    cursor: pointer;
+    border:none;
+}
+
+@media only screen and (min-width:1200px) {
+    .btn-secondary {
+        border:solid #FFFFFF 1px;
+        color:#FFFFFF;
+        margin-right: 27%;
+        margin-left: 30px;
+    }
+
+    .btn-primary {
+        margin-top: 54px;
+        margin-left:27%;
+    }
+}
