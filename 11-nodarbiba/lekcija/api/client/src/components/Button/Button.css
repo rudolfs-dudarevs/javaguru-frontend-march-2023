@@ -1,0 +1,25 @@
+.btn-primary {
+  height: 68px;
+  border-radius: 30px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 70px;
+  flex-grow: 0;
+  max-width: min-content;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+}
+
+.btn-secondary {
+  margin-top: 17px;
+  margin-bottom: 253px;
+  background-color: transparent;
+  border: solid var(--orange) 1px;
+  color: var(--orange);
+}
