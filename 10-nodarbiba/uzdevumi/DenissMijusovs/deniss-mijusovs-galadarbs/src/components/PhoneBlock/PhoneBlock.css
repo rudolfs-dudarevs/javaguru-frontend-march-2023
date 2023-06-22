@@ -1,0 +1,24 @@
+.phone__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.phone__title {
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px;
+}
+
+.line {
+    max-width: 80%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#phones {
+    transform: translateY(-50px);
+    height: 548px;
+}
