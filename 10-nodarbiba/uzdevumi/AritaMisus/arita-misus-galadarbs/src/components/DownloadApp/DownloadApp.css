@@ -1,0 +1,101 @@
+.download-app {
+  background-color: #252b42;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 50px 0;
+  min-height: 564px;
+
+  text-align: center;
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.download-app .hero-title {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  max-width: 310px;
+  height: 114px;
+
+  margin: 17px 0 27px 0;
+}
+
+.download-app p.hero-text {
+  margin: 0 0 50px 0;
+  height: 38px;
+  max-width: 245px;
+
+  font-size: 1.45rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+
+.download-app .buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* Modifications to Button component */
+
+.download-app .btn-primary,
+.download-app .btn-secondary {
+  font-size: 1rem;
+  width: fit-content;
+  min-width: 155px;
+  border-radius: 10px;
+  margin: 8px 10px;
+  max-height: 64px;
+}
+
+.download-app .btn-secondary {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* Styles for Desktop */
+
+@media only screen and (min-width: 768px) {
+  .download-app {
+    background: url("../../assets/download-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 509px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 73px 0;
+  }
+
+  .download-app .hero-title {
+    line-height: 3.5rem;
+    font-weight: 700;
+    max-width: 503px;
+    height: 57px;
+
+    margin: 17px 0 27px 0;
+    color: white;
+  }
+
+  .download-app p.hero-text {
+    margin: 0 0 54px 0;
+    height: 38px;
+    max-width: 840px;
+
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: #f6f6f6;
+  }
+}
