@@ -24,6 +24,7 @@
 @media only screen and (min-width: 768px) {
   .how-app-works {
     min-height: 884px;
+    padding-bottom: 50px;
   }
   .section-title {
     font-family: "Poppins";
