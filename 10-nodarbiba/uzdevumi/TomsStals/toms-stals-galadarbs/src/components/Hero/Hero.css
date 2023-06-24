@@ -1,26 +1,25 @@
+@import "../../index.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300,500;600;700&display=swap");
 
 .HeroWrapper {
   margin-top: 6rem;
   padding-top: 3.125rem;
-  background-color: #fafafa;
+  background-color: var(--herobg);
   background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 38rem;
-  color: white;
+  color: var(--white);
 }
 h1 {
   padding: 0 1rem;
-  font-family: "Montserrat", sans-serif;
   line-height: 2.656rem;
-  color: #252b42;
+  color: var(--darkblue);
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #737373;
+  color: var(--darkgrey);
   font-size: 16px;
 }
 h4 {
@@ -28,8 +27,7 @@ h4 {
   margin-top: 1rem;
   font-weight: 500;
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  color: #737373;
+  color: var(--darkgrey);
 }
 
 .ButtonWrapper {
@@ -46,7 +44,7 @@ h4 {
     background-size: cover;
     width: 100%;
     height: 38rem;
-    color: white;
+    color: var(--white);
   }
 
   .ButtonWrapper {
@@ -60,14 +58,14 @@ h4 {
     font-weight: 700;
     line-height: 80px;
     padding: 0 5rem;
-    color: white;
+    color: var(--white);
   }
   h3 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
     margin-top: 5.5rem;
-    color: white;
+    color: var(--white);
   }
 
   h4 {
@@ -75,6 +73,6 @@ h4 {
     font-size: 24px;
     line-height: 38px;
     font-weight: 300;
-    color: white;
+    color: var(--white);
   }
 }

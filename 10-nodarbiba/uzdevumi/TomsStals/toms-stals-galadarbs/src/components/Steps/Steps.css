@@ -1,30 +1,46 @@
+@import "../../index.css";
 .StepsWrapper {
   width: 95%;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.StepsImage img {
+.StepsImage .image {
+  order: 2;
+}
+
+.text {
+  order: 1;
+}
+
+img.image {
   max-width: 95%;
 }
-
-.StepsContent h2 {
+.text h2 {
   font-size: 40px;
   line-height: 57px;
-  font-family: "Montserrat";
 }
 
-.StepsContent h3 {
+.text h3 {
   margin-bottom: 2rem;
-  color: #fa4a0c;
+  color: var(--orange);
   font-size: 24px;
 }
 
-.StepsContent h4 {
+.text h4 {
   font-size: 24px;
 }
 
+/*Tablet*/
 @media screen and (min-width: 768px) {
+  .text h4 {
+    font-size: 24px;
+    color: var(--darkgrey);
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) {
   .StepsWrapper {
     display: flex;
     flex-direction: row;
@@ -32,29 +48,38 @@
     align-items: center;
   }
 
-  .StepsImage img {
+  .image {
     width: 40rem;
   }
 
-  .StepsContent {
+  .image-right .image {
+    padding-right: 100px;
+    order: 2;
+  }
+
+  .image-right .text {
+    order: 1;
+  }
+
+  .text {
     padding-left: 6rem;
   }
 
-  .StepsContent h3 {
+  .text h3 {
     margin-top: -1rem;
     text-align: left;
   }
-  .StepsContent h2 {
+  .text h2 {
     padding-right: 15rem;
     top: 0;
     line-height: 57px;
     text-align: left;
   }
 
-  .StepsContent h4 {
+  .text h4 {
     margin-top: -1rem;
     padding: 0 20rem 0 0;
-    color: #737373;
+    color: var(--darkgrey);
     text-align: left;
   }
 }

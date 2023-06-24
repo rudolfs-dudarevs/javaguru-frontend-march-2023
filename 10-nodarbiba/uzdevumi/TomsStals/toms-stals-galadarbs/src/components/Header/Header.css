@@ -1,9 +1,10 @@
+@import "../../index.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 
 .HeaderWrapper {
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: var(--white);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -19,7 +20,7 @@ nav a {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .HeaderWrapper {
     width: 1440px;
     margin: 0;
@@ -29,14 +30,13 @@ nav a {
   }
   nav a {
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-size: 16px;
-    color: #252b42;
+    color: var(--darkblue);
     padding: 0 4rem;
   }
   nav a:hover {
-    color: #fa4a0c;
+    color: var(--orange);
     transition: color 0.3s ease-in-out;
   }
 }

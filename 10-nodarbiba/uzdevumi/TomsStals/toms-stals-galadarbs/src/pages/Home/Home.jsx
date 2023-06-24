@@ -28,6 +28,7 @@ account to get started"
           heading="Shop for your favorites meal as e dey hot."
           subheading="Explore while shopping"
           description="Shop for your favorite meals or drinks and enjoy while doing it."
+          imageIsRight
         />
         <Steps
           image={Checkout}

@@ -1,17 +1,15 @@
 import "./HowItWorks.css";
-import LeftPhone from "../../assets/phone-left.png";
-import RightPhone from "../../assets/phone-right.png";
+import Phones from "../../assets/phones.png";
 
 const HowItWorks = () => {
   return (
     <>
       <div className="WorksWrapper">
-        <img className="phoneLeft" src={LeftPhone} alt="phone" />
-        <img className="phoneRight" src={RightPhone} alt="phone" />
+        <img className="phones" src={Phones} alt="phones" />
       </div>
       <div className="HeadlineWrapper">
         <hr />
-        <h2>How the app works</h2>
+        <h2 className="headline">How the app works</h2>
       </div>
     </>
   );

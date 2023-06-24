@@ -1,3 +1,4 @@
+@import "../../index.css";
 .FooterWrapper {
   margin: 3rem 0rem;
 }
@@ -12,7 +13,7 @@
 
 .FooterWrapper p {
   font-size: 12px;
-  color: #5c5c5c;
+  color: var(--footertext);
 }
 
 .SocialWrapper img {

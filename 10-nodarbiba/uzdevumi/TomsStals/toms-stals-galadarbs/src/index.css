@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  /*Colors*/
+  --orange: #fa4a0c;
+  --white: #ffffff;
+  --black: #000000;
+  --darkblue: #252b42;
+  --lightgrey: #e4e4e4;
+  --darkgrey: #737373;
+  --darkergrey: #373a47;
+  --darkestgrey: rgba(0, 0, 0, 0.3);
+  --btnshadow: rgba(0, 0, 0, 0.07);
+  --mobilebg: #252b42;
+  --mobiletext: #bdbdbd;
+  --footertext: #5c5c5c;
+  --herobg: #fafafa;
+}
+
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0 auto;
+}
+
+h1,
+.headline {
+  font-family: "Poppins";
 }

@@ -1,6 +1,7 @@
+@import "../../index.css";
 .DownloadWrapper {
   background-image: none;
-  background-color: #252b42;
+  background-color: var(--mobilebg);
   padding-bottom: 7.5rem;
 }
 
@@ -8,12 +9,12 @@
   padding: 0 2rem;
   font-size: 40px;
   margin-top: 7.5rem;
-  color: white;
+  color: var(--white);
   top: 0;
 }
 
 .DownloadWrapper h4 {
-  color: #bdbdbd;
+  color: var(--mobiletext);
 }
 
 .DButtonWrapper {
@@ -24,18 +25,18 @@
 .download-primary {
   margin-top: 2rem;
   font-size: 16px;
-  background-color: #fa4a0c;
+  background-color: var(--orange);
   border-radius: 10px;
   padding: 18px 31px;
   gap: 10px;
-  color: white;
+  color: var(--white);
   border: none;
 }
 
 .download-secondary {
   margin-top: 2rem;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid var(--white);
+  color: var(--white);
   border-radius: 10px;
   padding: 18px 31px;
   background-color: transparent;
@@ -59,7 +60,7 @@
     top: 0;
   }
   .DownloadWrapper h4 {
-    color: white;
+    color: var(--white);
   }
 
   button.button-primary,

@@ -1,20 +1,22 @@
+@import "../../index.css";
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   right: 20px;
   width: 20px;
   height: 16px;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #737373;
+  background: var(--darkgrey);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #fa4a0c;
+  background: var(--orange);
 }
 
 /* Position and sizing of clickable cross button */
@@ -25,7 +27,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: var(--darkgrey);
 }
 
 /*
@@ -39,42 +41,43 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: var(--white);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: var(--darkergrey);
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: var(--lightgrey);
   padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
+  padding: 0.25rem 0;
   display: inline-block;
-  color: white;
+  color: var(--darkgrey);
   text-decoration: none;
 }
 
 .bm-item:hover {
-  color: #fa4a0c;
+  color: var(--orange);
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--darkestgrey);
   top: 0;
   right: 0;
   width: 300px;
 }
 /* Hide on Tablet and Desktop Screens */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .bm-burger-button {
     display: none;
   }
