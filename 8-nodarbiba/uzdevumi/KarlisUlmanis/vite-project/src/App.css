@@ -1,0 +1,27 @@
+@import "./style/reset.css";
+@import "./style/colors.css";
+@import "./Header.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  padding: 110px 30px;
+}
+
+h1 {
+  display: block;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 0 8px;
+  color: aqua;
+}
