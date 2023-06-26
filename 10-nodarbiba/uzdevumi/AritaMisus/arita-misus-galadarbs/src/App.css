@@ -1,23 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Roboto:wght@700&display=swap");
 @import "../style/reset.css";
+@import "../style/colors.css";
 
-#root {
-  /* max-width: 1440px; */
-  /* margin: 0 auto;
+/* #root {
+  margin: 0 auto;
   padding: 2rem;
-  text-align: center; */
-}
+  text-align: center;
+} */
 */ * {
   box-sizing: border-box;
 }
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
-  /* max-width: 1440px; */
 }

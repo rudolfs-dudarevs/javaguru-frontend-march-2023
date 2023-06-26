@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 
   /* Product image placeholders until correct images are available */
-  border: 2px solid blue;
+  border: 2px solid red;
   border-radius: 15px;
 }
 
@@ -27,14 +27,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.25rem;
-  color: #fa4a0c;
+  color: var(--orange);
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.5rem;
-  color: #252b42;
+  color: var(--darkblue);
   margin: 40px 0 50px;
 
   max-width: 337px;
@@ -44,7 +44,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2.3rem;
-  color: #737373;
+  color: var(--lighgrey);
   max-width: 257px;
 }
 

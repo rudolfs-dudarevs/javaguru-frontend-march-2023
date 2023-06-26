@@ -36,7 +36,7 @@
 }
 
 .navigation-item li {
-  color: whitesmoke;
+  color: var(--whitesmoke);
   font-weight: 500;
 }
 
@@ -59,7 +59,7 @@
   top: 0;
   margin: 0;
   padding: 70px 0;
-  color: whitesmoke;
+  color: var(--whitesmoke);
   background-color: rgba(250, 74, 12, 0.75);
   transition: width 0.3s ease-in-out;
 }
@@ -73,7 +73,7 @@
 
 .navigation-item.active {
   font-weight: 500;
-  color: whitesmoke;
+  color: var(--whitesmoke);
 }
 
 .close.active {
@@ -113,14 +113,14 @@
   }
 
   .navigation-item li {
-    color: #252b42;
+    color: var(--darkblue);
     font-weight: 600;
   }
 
   .navigation-item li:hover,
   .navigation-item li:active,
   .navigation-item li:focus {
-    color: #fa4a0c;
+    color: var(--orange);
     font-weight: 600;
   }
 

@@ -10,7 +10,7 @@
   padding: 50px 0;
   min-height: 778px;
 
-  color: #252b42;
+  color: var(--darkblue);
   text-align: center;
 
   box-sizing: border-box;
@@ -33,7 +33,9 @@ h3.hero-title {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 700;
-  color: #737373;
+  color: var(--lightgrey);
+
+  max-width: 97%;
 }
 
 p.hero-text {
@@ -43,7 +45,9 @@ p.hero-text {
   font-size: 1.45rem;
   line-height: 2.25rem;
   font-weight: 500;
-  color: #737373;
+  color: var(--lightgrey);
+
+  max-width: 97%;
 }
 
 .buttons {
@@ -75,7 +79,7 @@ p.hero-text {
     height: 160px;
 
     margin: 17px 0 27px 0;
-    color: white;
+    color: var(--white);
   }
 
   h3.hero-title {

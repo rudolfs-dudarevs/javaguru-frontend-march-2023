@@ -1,5 +1,5 @@
 .download-app {
-  background-color: #252b42;
+  background-color: var(--darkblue);
   width: 100vw;
 
   display: flex;
@@ -10,7 +10,7 @@
   padding: 50px 0;
 
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
 
   box-sizing: border-box;
 }
@@ -51,11 +51,13 @@
   border-radius: 10px;
   margin: 8px 10px;
   max-height: 64px;
+
+  line-height: 1.25rem;
 }
 
 .download-app .btn-secondary {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 /* Styles for Desktop */
@@ -83,7 +85,7 @@
     height: 57px;
 
     margin: 17px 0 27px 0;
-    color: white;
+    color: var(--white);
   }
 
   .download-app p.hero-text {

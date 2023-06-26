@@ -22,16 +22,16 @@ const Navigation = () => {
         />
         <ul className={`navigation-list ${isMenuOpen ? "active" : ""}`}>
           <li className="nav-item">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a href="#">Product</a>
+            <a href="/">Product</a>
           </li>
           <li className="nav-item">
-            <a href="#">FAQ</a>
+            <a href="/">FAQ</a>
           </li>
           <li className="nav-item">
-            <a href="#">Contact</a>
+            <a href="/">Contact</a>
           </li>
         </ul>
       </nav>

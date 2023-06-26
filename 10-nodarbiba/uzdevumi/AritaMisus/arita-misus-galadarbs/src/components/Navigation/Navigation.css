@@ -15,7 +15,7 @@
 }
 
 .nav-item a {
-  color: whitesmoke;
+  color: var(--whitesmoke);
   font-weight: 500;
   text-decoration: none;
 }
@@ -23,7 +23,7 @@
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a:focus {
-  color: #fa4a0c;
+  color: var(--orange);
 }
 
 .menu {
@@ -60,7 +60,7 @@
 
 .nav-item.active {
   font-weight: 500;
-  color: whitesmoke;
+  color: var(--whitesmoke);
 }
 
 .close.active {
@@ -91,7 +91,7 @@
   }
 
   .nav-item a {
-    color: #252b42;
+    color: var(--darkblue);
     text-decoration: none;
     font-weight: 600;
   }
@@ -99,7 +99,7 @@
   .nav-item li:hover,
   .nav-item li:active,
   .nav-item li:focus {
-    color: #fa4a0c;
+    color: var(--orange);
     font-weight: 600;
   }
 
