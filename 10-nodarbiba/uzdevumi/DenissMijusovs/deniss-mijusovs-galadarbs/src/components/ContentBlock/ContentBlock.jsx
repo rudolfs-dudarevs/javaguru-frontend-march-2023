@@ -7,7 +7,7 @@ import "./ContentBlock.css";
 
 function ContentBlock() {
   return (
-    <div>
+    <div className="content">
       <ImageTextLayout
         imageSrc={Image1}
         subtitle="Create an account"

@@ -1,28 +1,50 @@
-import React from "react";
-import "./Footer.css";
+import React, { useEffect, useState } from "react";
+import { FaFacebookSquare, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Logo from "../../assets/logo.svg";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <footer className="footer">
-      <div className="footer__logo">
-        <img src={Logo} alt="Logo" />
-      </div>
+      <img className="footer__logo" src={Logo} alt="Logo" />
       <div className="footer__social">
-        <a href="https://www.twitter.com">
+        <a href="https://www.twitter.com" rel="noopener noreferrer">
           <FaTwitter />
         </a>
-        <a href="https://www.facebook.com">
-          <FaFacebook />
+        <a href="https://www.facebook.com" rel="noopener noreferrer">
+          <FaFacebookSquare />
         </a>
-        <a href="https://www.instagram.com">
-          <FaInstagram />
-        </a>
+        {isMobile ? (
+          <a className="footer__social-icon linkedin" href="https://www.linkedin.com" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+        ) : (
+          <a className="footer__social-icon instagram" href="https://www.instagram.com" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+        )}
       </div>
-      <p className="footer__copyright">
-      Copyright &copy; {new Date().getFullYear()} Bella Onojie.com
-      </p>
+      {isMobile ? (
+        <p className="footer__mobile">Just type what's on your mind and we'll</p>
+      ) : (
+        <div className="footer__desktop">
+          Copyright &copy; {new Date().getFullYear()} Bella Onojie.com
+        </div>
+      )}
     </footer>
   );
 };

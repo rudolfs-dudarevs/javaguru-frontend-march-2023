@@ -1,6 +1,8 @@
 .image-text-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  max-width: 1200px;
 }
 
 .image-text-container.right {
@@ -14,41 +16,44 @@
   align-items: center;
 }
 
-.image-container img {
+.image {
   height: 600px;
 }
 
 .text-container {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.text-container h2 {
+.title {
   color: var(--black);
   font-weight: bold;
-  font-size: 30px;
-  margin: 40px 0;
+  font-size: 40px;
+  margin: 20px 0;
 }
 
-.text-container h4 {
+.subtitle {
   color: var(--primary);
-  font-size: 20px;
-  margin: 40px 0;
+  font-size: 24px;
+  margin: 20px 0;
 }
 
-.text-container p {
+.text {
   color: var(--secondary);
-  font-size: 20px;
-  margin: 40px 0;
+  font-size: 24px;
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 768px) {
-  .image-text-container, .image-text-container.right {
-    display: flex;
+  .image-text-container,
+  .image-text-container.right {
     flex-direction: column-reverse;
+    align-items: center;
+  }
+  .title,.subtitle,.text {
+    text-align: center;
   }
 }

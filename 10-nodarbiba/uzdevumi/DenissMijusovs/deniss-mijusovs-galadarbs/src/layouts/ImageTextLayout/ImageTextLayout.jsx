@@ -17,12 +17,12 @@ const ImageTextLayout = ({
       }
     >
       <div className="image-container">
-        <img src={imageSrc} alt="Image" />
+        <img className="image" src={imageSrc} alt="Image" />
       </div>
       <div className="text-container">
-        <h4>{subtitle}</h4>
-        <h2>{title}</h2>
-        <p>{text}</p>
+        <h3 className="subtitle">{subtitle}</h3>
+        <h2 className="title">{title}</h2>
+        <p className="text">{text}</p>
       </div>
     </div>
   );

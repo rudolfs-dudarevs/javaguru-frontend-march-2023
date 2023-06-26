@@ -1,8 +1,9 @@
+import Construction from "../../assets/under.svg";
 import "./About.css"
 
 function About() {
   return (
-    <div className='about'>About</div>
+    <img src={Construction} alt="Construction" />
   )
 }
 

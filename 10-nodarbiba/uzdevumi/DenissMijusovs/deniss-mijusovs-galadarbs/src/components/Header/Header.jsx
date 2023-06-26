@@ -1,32 +1,36 @@
-import "./Header.css";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import Logo from "../../assets/logo.svg";
+import "./Header.css";
 
 const Header = () => {
   const menuItems = [
     { label: "Home", link: "/" },
     { label: "Product", link: "/about" },
-    { label: "Faq", link: "/about" },
-    { label: "Contact", link: "/a" },
+    { label: "Faq", link: "/faq" },
+    { label: "Contact", link: "/contact" },
   ];
 
   return (
-    <>
+    <div className="header">
       <div className="menu">
         <BurgerMenu />
       </div>
-      <header className="header">
-        <img src={Logo} alt="Logo" />
+      <nav className="navbar">
+        <Link to={"/"}>
+          <img className="logo" src={Logo} alt="Company Logo" />
+        </Link>
+
         <div className="menu-items">
-          {menuItems.map((item, index) => (
-            <Link key={index} to={item.link}>
+          {menuItems.map((item) => (
+            <NavLink className="menu-item" key={item.label} to={item.link}>
               {item.label}
-            </Link>
+            </NavLink>
           ))}
         </div>
-      </header>
-    </>
+      </nav>
+    </div>
   );
 };
 
