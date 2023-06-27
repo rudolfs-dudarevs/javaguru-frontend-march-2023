@@ -25,13 +25,13 @@ const Navigation = () => {
             <a href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a href="/">Product</a>
+            <a href="/Product">Product</a>
           </li>
           <li className="nav-item">
-            <a href="/">FAQ</a>
+            <a href="/FAQ">FAQ</a>
           </li>
           <li className="nav-item">
-            <a href="/">Contact</a>
+            <a href="/Contact">Contact</a>
           </li>
         </ul>
       </nav>

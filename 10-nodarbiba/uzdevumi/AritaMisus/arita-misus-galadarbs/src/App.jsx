@@ -1,21 +1,24 @@
-import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import HowAppWorks from "./components/HowAppWorks/HowAppWorks";
-import DownloadApp from "./components/DownloadApp/DownloadApp";
-import Footer from "./components/Footer/Footer";
 
-function App() {
+import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
+import MainLayout from "./layouts/MainLayout/MainLayout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const App = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <HowAppWorks />
-      <DownloadApp />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="/Product" element={<NotFound />} />
+          <Route path="/FAQ" element={<NotFound />} />
+          <Route path="/Contact" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
