@@ -1,15 +1,16 @@
-.post-card {
+.user-card {
     font-size: 18px;;
     padding: 20px;
     border: 2px solid var(--black);
     border-radius: 4px;
 }
 
-.post-card__title {
+.user-card__name {
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.post-card__text {
-    /* some style */
+.user-card__list-item {
+    font-weight: 300;
+    margin-bottom: 10px;
 }
