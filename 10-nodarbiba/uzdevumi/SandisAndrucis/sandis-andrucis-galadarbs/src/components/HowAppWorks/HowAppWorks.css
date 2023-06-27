@@ -1,19 +1,17 @@
-.how-app-works__phone1 {
-    width:225px;
-    height:446px;
-    position:absolute;
-    left: auto;
-    top: 659px;
-    transform: translateX(-215px);
+.how-app-works {
+    margin-bottom:65px; 
 }
 
-.how-app-works__phone2 {
-    width:213px;
-    height:403px;
-    position:absolute;
-    left: auto;
-    top: 743px;
-    transform: translateX(-15px);
+.how-app-works__picture-container {
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+.how-app-works__picture {
+    width:390px;
+    height:485px;
+    margin-top: 30px;
 }
 
 .how-app-works__text {
@@ -21,54 +19,41 @@
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.1px;
-    margin-bottom: 49px;
+    margin-top: 116px;
 }
 
-.how-app-works__hr {
-    border: 3px solid #E4E4E4;
-    height: 0px;
+.how-app-works__divider {
+    border:none;
+    background-color: var(--divider);
+    height: 3px;
     width: 100%;
-    margin:0;
+    margin-top:50px;
 }
 
-.how-app-works__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 367px;
-    margin-bottom: 65px;
-}
-
-@media only screen and (min-width:1200px) {
-    .how-app-works__phone1 {
-        width: 290px;
-        height: 560px;
-        left: auto;
-        top: 660px;
-        transform: translateX(-300px);
-    }
-    
-    .how-app-works__phone2 {
-        width: 285px;
-        height: 531px;
-        left: auto;
-        transform: translateX(-35px);
-        top: 769px;
+@media only screen and (min-width:1200px) {   
+    .how-app-works__picture {
+        width:548px;
+        height:640px;
+        margin-top: 30px;
+        transform: translateY(-80px);
     }
 
     .how-app-works__container {
-        margin-top: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    .how-app-works__hr {
-        order:1;
-        width:62%;
-    }
-
+    
     .how-app-works__text {
+        font-size: 44px;
         margin-top:72px;
         order:2;
         width:100%;
         margin-bottom: 59px;
+    }
+    
+    .how-app-works__divider {
+        order:1;
+        width:65%;
     }
 }
