@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react"
 import PostCard from "../PostCard/PostCard.jsx"
 import GridControls from "../GridControls/GridControls.jsx"
-// # importēt Counter komponenti
-// # importēt UserCard komponenti
-// # importēt CommentCard komponenti
+import UserCard from "../UserCard/UserCard.jsx"
+import CommentCard from "../CommentCard/CommentCard.jsx"
+import Counter from "../Counter/Counter.jsx"
 import "./SocialGrid.css"
 
 const SocialGrid = () => {
     const [resourceType, setResourceType] = useState('posts')
     const [items, setItems] = useState([])
+    const [number, setCount] = useState(5)
     // # izveidot jaunu useState priekš count mainīgā vērtība iegūšanas un iestatīšanas ar sākotnējo vērtību 5
     
     useEffect(() => {
         // # URL paramtera _end=10 vērtību aizvietot ar count, kas būs vērtība no component state
-        fetch(`https://jsonplaceholder.typicode.com/${resourceType}?_start=0&_end=10`)
+        fetch(`https://jsonplaceholder.typicode.com/${resourceType}?_start=0&_end=${number}`)
             .then(response => response.json())
             .then(json => setItems(json))
         // # Dependancy masīvu [resourceType] papildināt ar count mainīgo,
         // lai šis useEffect izpildītos arī uz count vērtības maiņu
-    }, [resourceType])
+    }, [resourceType, number])
 
     const renderCards = (item) => {
         {
@@ -29,12 +30,18 @@ const SocialGrid = () => {
                     component = <PostCard key={item.id} title={item.title} text={item.body} />
                     break;
                 case "users":
-                    // # Ievietot UserCard komponenti un padot tai nepieciešamos props
-                    // component = 
+                    component = <UserCard key={item.id}
+                    title={item.name}
+                    nickname={item.username}
+                    mailto={item.email}
+                    post={item.website}
+                    ring={item.phone}/>
                     break;
                 case "comments":
-                    // # Ievietot CommentCard komponenti un padot tai nepieciešamos props
-                    //  component =
+                    component = <CommentCard key={item.id}
+                    title={item.name}
+                    mailto={item.email}
+                    text={item.body}/>
                     break;
             }
 
@@ -44,13 +51,14 @@ const SocialGrid = () => {
 
     const handleCountChange = (operation) => {
         switch(operation) {
-            case "increment": 
-                // # Izveidot loģiku, lai palielinātu Count vērtību
+            case "increment":
+                if (number < 10) {setCount(prevCount => prevCount + 1);}
+                   
                 console.log("increment")
                 break;
             case "decrament":
-                // # Izveidot loģiku, lai samazinātu Count vērtību
-                console.log("decrement")
+                if (number > 1) {setCount(prevCount => prevCount - 1);}
+                console.log("decrement") 
         } 
     }
 
@@ -58,6 +66,7 @@ const SocialGrid = () => {
         <div className="social-grid">
             <div className="social-grid__controls">
                 <GridControls handleResourceChange={setResourceType}/>
+                <Counter handleCountChange={handleCountChange} result={number}/>
                 {/* # Ievietot Count komponenti un padot tai nepieciešamos props - handleCountChange un count */}
             </div>
             <div className="social-grid__content">
