@@ -9,12 +9,22 @@ import Instagram from "../../assets/icon-instagram.svg";
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src={Logo} className="logo desktop-only" />
+      <a href="/" className="logo">
+        <img src={Logo} className="logo desktop-only" />
+      </a>
       <div className="media-icon-wrapper">
-        <img src={Twitter} className="media-icon" />
-        <img src={Facebook} className="media-icon" />
-        <img src={Linkedin} className="media-icon mobile-only" />
-        <img src={Instagram} className="media-icon desktop-only" />
+        <a href="/">
+          <img src={Twitter} className="media-icon" />
+        </a>
+        <a href="/">
+          <img src={Facebook} className="media-icon" />
+        </a>
+        <a href="/" className="mobile-only">
+          <img src={Linkedin} className="media-icon" />
+        </a>
+        <a href="/" className="desktop-only">
+          <img src={Instagram} className="media-icon" />
+        </a>
       </div>
       <p className="copyright">Copyright 2020 Bella Onojie.com</p>
     </footer>
