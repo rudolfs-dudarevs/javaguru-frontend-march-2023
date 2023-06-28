@@ -1,0 +1,46 @@
+.btn-primary, .btn-secondary {
+    justify-content: center;
+    width: 236px;
+    height: 68px;
+    margin: 25px;
+    margin-top: 30px;
+    border-radius: 35px;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.btn-primary:hover, .btn-secondary:hover
+{
+    background-color: var(--light_grey);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+.btn-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: bold;
+    margin-top: 50px;
+}
+    
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: bold;
+    border: 1px solid var(--primary);
+    margin-top: 0px;
+}
+}

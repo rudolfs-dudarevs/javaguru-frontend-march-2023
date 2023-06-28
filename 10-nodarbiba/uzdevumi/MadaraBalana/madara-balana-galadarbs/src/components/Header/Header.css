@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  height: 155px;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 50;
+}
+
+.logo {
+  position: fixed;
+  width: 205px;
+  height: 102px;
+  top: 26px;
+  left: 70px;
+}
+
+.header_navigation {
+  position: fixed;
+  font-size: 21px;
+  top: 78px;
+  right: 25px;
+}
+
+.header_link {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.header_link:focus {
+  color: var(--primary);
+}
+
+@media screen and (min-width: 768px) {
+.menu {
+    display: none;
+  }
+
+.header_navigation {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.header_navigation {
+    display: none;
+  }
+}
