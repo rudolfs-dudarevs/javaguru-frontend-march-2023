@@ -1,4 +1,3 @@
-import "./Instructions.css";
 import instructionPhoto1 from "../../assets/Instructions1.png"
 import instructionPhoto2 from "../../assets/Instructions2.png"
 import instructionPhoto3 from "../../assets/Instructions3.png"

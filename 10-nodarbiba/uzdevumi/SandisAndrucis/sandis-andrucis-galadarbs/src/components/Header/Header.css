@@ -16,11 +16,13 @@
 }
 
 .header__textMenu {
+    display: flex;
     visibility:hidden;
     font-size: 16px;
     position: fixed;
     right:50px;
     top: 64px;
+    gap: 114px;
 }
 
 .header__link {
@@ -28,7 +30,6 @@
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.2px;
-    padding-left: 114px;
     line-height: 28px;
     color:var(--darkblue);
 }
@@ -37,7 +38,7 @@
     color:var(--primary);
 }
 
-@media only screen and (min-width:1200px) {    
+@media only screen and (min-width:768px) {
     .header {
         height: 155px;
     }
@@ -46,7 +47,9 @@
         width: 206px;
         height: 102px;
     }
+}
 
+@media only screen and (min-width:1200px) {    
     .header__textMenu {
         visibility:visible;
     }

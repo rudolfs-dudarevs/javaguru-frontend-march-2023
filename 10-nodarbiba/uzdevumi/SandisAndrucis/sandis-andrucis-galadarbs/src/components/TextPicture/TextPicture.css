@@ -46,6 +46,12 @@
     width:100%;
 }
 
+@media only screen and (min-width:768px) {
+    .text-picture__text-container {
+        width:50%;
+    }
+}
+
 @media only screen and (min-width:1200px) {
     .text-picture__text-container {
         text-align:start;

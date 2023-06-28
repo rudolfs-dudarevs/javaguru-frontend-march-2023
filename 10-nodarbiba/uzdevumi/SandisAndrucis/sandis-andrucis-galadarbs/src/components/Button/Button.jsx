@@ -2,9 +2,9 @@ import "./Button.css";
 
 
 
-const Button = ({text, type}) => {
+const Button = ({classNa, text, type}) => {
     return (
-        <button className={type}>{text}</button>
+        <button className={classNa} type={type}>{text}</button>
     );
   };
   
