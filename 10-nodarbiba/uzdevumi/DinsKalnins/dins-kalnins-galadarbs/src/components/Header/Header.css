@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 7rem;
+  padding: 0 8rem;
+  background-color: var(--white);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  height: 5rem;
+  width: auto;
+}
+
+.menu-items a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: "Montserrat";
+  margin-right: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  transition: color 0.3s ease-in-out;
+  margin-right: 5rem;
+}
+
+.menu-items a:hover {
+  color: var(--primary);
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-items {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .header img {
+    display: flex;
+    margin-left: -70px;
+  }
+}
