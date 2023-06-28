@@ -3,6 +3,7 @@ import Hero from "../../components/Hero/Hero";
 import HowItWorks from "../../components/HowItWorks/HowItWorks";
 import Steps from "../../components/Steps/Steps";
 import Download from "../../components/Download/Download";
+import ContactUs from "../../components/ContactUs/ContactUs";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 import Create from "../../assets/create.png";
@@ -38,6 +39,7 @@ account to get started"
           delivered with ease."
         />
         <Download />
+        <ContactUs />
         <Footer />
       </div>
     </>

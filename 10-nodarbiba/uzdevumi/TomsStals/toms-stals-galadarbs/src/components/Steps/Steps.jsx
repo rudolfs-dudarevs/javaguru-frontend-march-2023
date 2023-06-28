@@ -16,7 +16,7 @@ const Steps = ({ image, imageIsRight, heading, subheading, description }) => {
   );
 };
 
-Steps.PropTypes = {
+Steps.propTypes = {
   image: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
   subheading: PropTypes.string.isRequired,

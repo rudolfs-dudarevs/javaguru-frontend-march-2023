@@ -1,6 +1,7 @@
 import Logo from "../../assets/logo.png";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+
 import "./Header.css";
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
           <Link to="/">Home</Link>
           <Link to="/">Product</Link>
           <Link to="/">Faq</Link>
-          <Link to="/">Contact</Link>
+          <Link to="/#contact">Contact</Link>
         </nav>
         <BurgerMenu />
       </div>
