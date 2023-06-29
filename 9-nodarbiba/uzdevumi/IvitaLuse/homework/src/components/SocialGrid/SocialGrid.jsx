@@ -55,7 +55,7 @@ const SocialGrid = () => {
       return component;
     }
   };
-  // kāpēc const handleCountChange? Tā jābūt? Nevajadzēja būt function? var buut conts. tas pats kas function
+  //
   const handleCountChange = (operation) => {
     switch (operation) {
       case "increment":

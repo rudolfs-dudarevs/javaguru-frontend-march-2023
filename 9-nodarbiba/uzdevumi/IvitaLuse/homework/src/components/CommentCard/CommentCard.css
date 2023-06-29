@@ -5,11 +5,15 @@
   border-radius: 4px;
 }
 
-.comment-card__title {
+.comment-card__name {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .comment-card__text {
-  /* some style */
+  font-family: sans-serif;
+}
+
+.comment-card__email {
+  font-style: italic;
 }

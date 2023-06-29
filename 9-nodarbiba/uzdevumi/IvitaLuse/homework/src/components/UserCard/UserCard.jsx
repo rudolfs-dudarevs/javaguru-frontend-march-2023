@@ -1,12 +1,12 @@
 import React from "react";
 import "./UserCard.css";
 
-const UserCard = ({ title, text }) => {
+const UserCard = ({ name, email, website }) => {
   return (
     <div className="user-card">
-      {}
-      <p className="user-card__title">{title}</p>
-      <p className="user-card__text">{text}</p>
+      <p className="user-card__name">{name}</p>
+      <p className="user-card__email">{email}</p>
+      <p className="user-card__website">{website}</p>
     </div>
   );
 };
