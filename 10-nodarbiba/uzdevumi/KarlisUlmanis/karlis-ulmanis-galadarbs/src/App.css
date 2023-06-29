@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@600;700&family=Roboto:wght@700&display=swap');
+@import "./style/colors.css";
+@import "./style/reset.css";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: var(--background);
+    }
+}
