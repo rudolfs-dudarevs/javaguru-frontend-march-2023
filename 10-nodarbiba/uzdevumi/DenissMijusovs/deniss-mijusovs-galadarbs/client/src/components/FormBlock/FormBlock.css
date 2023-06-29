@@ -39,7 +39,9 @@
 .contact-us__sent-success {
   display: flex;
   flex-direction: column;
+  min-height: 70vh;
   align-items: center;
+  justify-content: center;
   gap: 15px;
   margin:0 auto;
   color: var(--primary);
@@ -52,10 +54,14 @@
     font-size: 40px;
     font-weight: 700;
     color: var(--white);
+    margin: 20px;
 }
 
 @media only screen and (max-width: 767px) {
     .contact-us {
         background-image: none;
+    }
+    .form__title {
+      color: var(--black);
     }
 }

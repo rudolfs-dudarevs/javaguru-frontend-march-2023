@@ -2,7 +2,11 @@ import FormBlock from "../../components/FormBlock/FormBlock";
 import "./Contact.css";
 
 function Contact() {
-  return <FormBlock />;
+  return (
+    <div className="contact">
+      <FormBlock />
+    </div>
+  );
 }
 
 export default Contact;
