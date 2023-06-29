@@ -1,6 +1,6 @@
 import "./Phones.css";
-import LeftPhone from "/Users/macbookpro/Documents/Documents - Dins MacBook Pro/repository/javaguru-frontend-march-2023/10-nodarbiba/uzdevumi/DinsKalnins/dins-kalnins-galadarbs/src/assets/phone-left.png";
-import RightPhone from "/Users/macbookpro/Documents/Documents - Dins MacBook Pro/repository/javaguru-frontend-march-2023/10-nodarbiba/uzdevumi/DinsKalnins/dins-kalnins-galadarbs/src/assets/phone-right.png";
+import LeftPhone from "../../assets/phone-left.png";
+import RightPhone from "../../assets/phone-right.png";
 
 const Phones = () => {
   return (
