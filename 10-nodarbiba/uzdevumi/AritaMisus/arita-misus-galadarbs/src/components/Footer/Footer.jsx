@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import Logo from "../../assets/logo.svg";
 import Twitter from "../../assets/icon-twitter.svg";
@@ -9,22 +10,22 @@ import Instagram from "../../assets/icon-instagram.svg";
 const Footer = () => {
   return (
     <footer className="footer">
-      <a href="/" className="logo">
+      <Link to="/" className="logo">
         <img src={Logo} className="logo desktop-only" />
-      </a>
+      </Link>
       <div className="media-icon-wrapper">
-        <a href="/">
+        <Link to="/">
           <img src={Twitter} className="media-icon" />
-        </a>
-        <a href="/">
+        </Link>
+        <Link to="/">
           <img src={Facebook} className="media-icon" />
-        </a>
-        <a href="/" className="mobile-only">
+        </Link>
+        <Link to="/" className="mobile-only">
           <img src={Linkedin} className="media-icon" />
-        </a>
-        <a href="/" className="desktop-only">
+        </Link>
+        <Link to="/" className="desktop-only">
           <img src={Instagram} className="media-icon" />
-        </a>
+        </Link>
       </div>
       <p className="copyright">Copyright 2020 Bella Onojie.com</p>
     </footer>
