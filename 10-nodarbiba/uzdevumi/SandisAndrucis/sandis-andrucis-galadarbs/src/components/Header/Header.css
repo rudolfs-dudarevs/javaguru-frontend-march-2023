@@ -1,28 +1,36 @@
 .header {
     position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
     height: 112px;
     background-color: var(--white);
     z-index: 9999;
     width:100%;
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+}
+
+.header__visible {
     top:0;
+}
+
+.header__hidden {
+    top:-112px;
 }
 
 .header__logo {
     width: 104px;
     height: 51px;
-    top: 17px;
-    left: 25px;
-    position: fixed;
+    margin-left: 25px;
 }
 
 .header__textMenu {
     display: flex;
     visibility:hidden;
     font-size: 16px;
-    position: fixed;
-    right:50px;
-    top: 64px;
     gap: 114px;
+    margin-right: 40px;
 }
 
 .header__link {
@@ -42,10 +50,15 @@
     .header {
         height: 155px;
     }
+    
+    .header__hidden {
+        top:-155px;
+    }
 
     .header__logo {
         width: 206px;
         height: 102px;
+        margin-left: 70px;
     }
 }
 
