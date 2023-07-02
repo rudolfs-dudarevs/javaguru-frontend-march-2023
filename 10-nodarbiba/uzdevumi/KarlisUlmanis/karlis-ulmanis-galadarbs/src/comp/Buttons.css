@@ -12,6 +12,7 @@
     line-height: 36px;
     letter-spacing: 0.1px;
     border-radius: 30px;
+    max-width: min-content;
 }
 
 .btn-secondary {
@@ -21,13 +22,14 @@
 
 .btn-primary {
     background-color: var(--primary);
-    border: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .btn-secondary:hover, .btn-primary:hover {
     background-color: var(--accent);
     cursor: pointer;
     border: 1px solid var(--accent);
+    transition: all 0.2s;
 }
 
 @media screen and (max-width: 768px) {

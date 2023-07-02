@@ -3,7 +3,7 @@ import Phones from '../assets/phones.png'
 
 const HowAppWork = () => {
     return (
-        <div className="howappwork">
+        <div className="howappwork" id="howappwork">
             <div className="phones">
                 <img src={Phones} alt="phones with Bella Onojie app simulation" />
             </div>
@@ -13,7 +13,9 @@ const HowAppWork = () => {
             <div className="how_h1">
                 How the app works
             </div>
-
+            <div className="break-line-mob">
+                <></>
+            </div>
         </div>
     )
 }

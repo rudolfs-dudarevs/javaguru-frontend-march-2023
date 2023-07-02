@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import "./HighlightsComp.css"
 
-const HighlightsComp = ({align, picture, preTitle, title, text, boxOrder}) => {
+const HighlightsComp = ({reverse, picture, preTitle, title, text}) => {
+
+    const CompClass = `highlight ${reverse ? "img-right" : "" }`;
+
     return (
-        <div className={align}>
-            <div className="img-container">
-                {picture}
-            </div>
+        <div className={CompClass}>
             <div className="text-container">
                 <div className="preTitle">
                     {preTitle}
@@ -18,6 +18,9 @@ const HighlightsComp = ({align, picture, preTitle, title, text, boxOrder}) => {
                 <div className="text">
                     {text}
                 </div>
+            </div>
+            <div className="img-container">
+                {picture}
             </div>            
         </div>
     )
