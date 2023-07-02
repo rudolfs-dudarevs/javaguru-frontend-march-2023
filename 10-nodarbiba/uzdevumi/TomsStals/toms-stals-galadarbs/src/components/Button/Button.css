@@ -1,0 +1,46 @@
+@import "../../index.css";
+.button-primary,
+.button-secondary {
+  margin-top: 2rem;
+  color: var(--white);
+  font-size: 24px;
+  padding: 1rem 3.65rem;
+  border-radius: 30px;
+  border: none;
+  height: 68px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: var(--orange);
+  border-radius: 30px;
+  box-shadow: 0px 40px 40px var(--btnshadow);
+}
+
+.button-primary:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: color 0.5s ease-in-out;
+}
+
+.button-secondary {
+  color: var(--orange);
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 30px;
+}
+
+.button-secondary:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: color 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .button-secondary {
+    margin-left: 2rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+  }
+}

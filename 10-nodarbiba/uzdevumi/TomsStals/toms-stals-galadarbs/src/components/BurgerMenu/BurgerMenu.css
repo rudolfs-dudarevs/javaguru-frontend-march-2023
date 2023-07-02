@@ -1,0 +1,84 @@
+@import "../../index.css";
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  right: 20px;
+  width: 20px;
+  height: 16px;
+  opacity: 1;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: var(--darkgrey);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: var(--orange);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--darkgrey);
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--white);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: var(--darkergrey);
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: var(--lightgrey);
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  padding: 0.25rem 0;
+  display: inline-block;
+  color: var(--darkgrey);
+  text-decoration: none;
+}
+
+.bm-item:hover {
+  color: var(--orange);
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: var(--darkestgrey);
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+/* Hide on Tablet and Desktop Screens */
+@media screen and (min-width: 992px) {
+  .bm-burger-button {
+    display: none;
+  }
+}

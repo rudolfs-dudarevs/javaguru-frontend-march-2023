@@ -1,0 +1,10 @@
+@import "./index.css";
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+}
