@@ -1,0 +1,62 @@
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    min-height: 185px;
+    padding: 52px 120px 0px 120px;
+    background-color: var(--white);
+}
+
+.logo__foot, .social, .copy {
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+    min-width: 200px;
+    height: 120px;
+}
+
+.social {
+    justify-content: center;
+}
+
+.logo__social {
+    width: 40px;
+    height: 40px;
+    margin: 20px 12px 20px 12px;
+}
+
+.logo__social:hover {
+    filter: hue-rotate(350deg) saturate(1352%);
+    cursor: pointer;
+}
+
+.copy {
+    justify-content: right;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo__img {
+        height: 70px;
+    }
+
+    .logo__foot {
+        display: none;
+    }
+
+    .social, .copy {
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+
+    .foot {
+        flex-direction: column;
+    }
+
+}
