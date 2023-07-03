@@ -14,16 +14,17 @@
   text-decoration: none;
 }
 
-.nav-item a {
+.nav-item {
   color: var(--whitesmoke);
   font-weight: 500;
   text-decoration: none;
 }
 
-.nav-item a:hover,
-.nav-item a:active,
-.nav-item a:focus {
-  color: var(--orange);
+.nav-item:hover,
+.nav-item:active,
+.nav-item:focus {
+  color: var(--darkblue);
+  font-weight: 600;
 }
 
 .menu {
@@ -90,17 +91,15 @@
     list-style-type: none;
   }
 
-  .nav-item a {
+  .nav-item {
     color: var(--darkblue);
     text-decoration: none;
     font-weight: 600;
   }
-
-  .nav-item li:hover,
-  .nav-item li:active,
-  .nav-item li:focus {
+  .nav-item:hover,
+  .nav-item:active,
+  .nav-item:focus {
     color: var(--orange);
-    font-weight: 600;
   }
 
   .menu,

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 
 import Menu from "../../assets/menu.svg";
@@ -11,6 +12,10 @@ const Navigation = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <nav className={`navigation ${isMenuOpen ? "active" : ""}`}>
@@ -21,18 +26,18 @@ const Navigation = () => {
           alt="Close Menu"
         />
         <ul className={`navigation-list ${isMenuOpen ? "active" : ""}`}>
-          <li className="nav-item">
-            <a href="/">Home</a>
-          </li>
-          <li className="nav-item">
-            <a href="/Product">Product</a>
-          </li>
-          <li className="nav-item">
-            <a href="/FAQ">FAQ</a>
-          </li>
-          <li className="nav-item">
-            <a href="/Contact">Contact</a>
-          </li>
+          <Link to="/" className="nav-item" onClick={closeMenu}>
+            Home
+          </Link>
+          <Link to="/Product" className="nav-item" onClick={closeMenu}>
+            Product
+          </Link>
+          <Link to="/FAQ" className="nav-item" onClick={closeMenu}>
+            FAQ
+          </Link>
+          <Link to="/Contact" className="nav-item" onClick={closeMenu}>
+            Contact
+          </Link>
         </ul>
       </nav>
       <img
