@@ -5,8 +5,8 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 7rem;
-  padding: 0 8rem;
+  height: 6rem;
+  padding: 0 5rem;
   background-color: var(--white);
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
@@ -37,6 +37,20 @@
   display: none;
 }
 
+.header {
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
+}
+
+.header.hide {
+  transform: translateY(-100%);
+}
+
+.header.show {
+  transform: translateY(0);
+}
+
 @media only screen and (max-width: 768px) {
   .menu-items {
     display: none;
@@ -47,6 +61,6 @@
 
   .header img {
     display: flex;
-    margin-left: -70px;
+    margin-left: -3rem;
   }
 }

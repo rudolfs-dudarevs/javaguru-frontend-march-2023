@@ -1,13 +1,11 @@
 import "./Phones.css";
-import LeftPhone from "../../assets/phone-left.png";
-import RightPhone from "../../assets/phone-right.png";
+import Phone from "../../assets/Phones.png";
 
 const Phones = () => {
   return (
     <>
       <div className="PhoneWrapper">
-        <img className="phoneLeft" src={LeftPhone} alt="phone" />
-        <img className="phoneRight" src={RightPhone} alt="phone" />
+        <img className="phone" src={Phone} alt="phone" />
       </div>
       <div className="HeadlineWrapper">
         <div className="breaker"></div>
