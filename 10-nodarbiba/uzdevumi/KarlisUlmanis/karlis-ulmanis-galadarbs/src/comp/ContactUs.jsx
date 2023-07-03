@@ -1,20 +1,45 @@
+import { useState } from "react"
 import { useForm } from "react-hook-form"
 import Buttons from "./buttons"
 import "./ContactUs.css"
 
 const ContactUs = () => {
+    const [ isSent, setIsSent ] = useState(false);
+
     const {
         register,
         handleSubmit,
         formState: { errors },
       } = useForm()
 
-    const onSubmit = () => {
-        console.log("sent")
-    }
+      const onSubmit = (data) => {
+        console.log(data);
+        const apiUrl = "http://localhost:8081/contact-us";
+        fetch(apiUrl, {
+            headers: {
+                Accept: "application.json",
+                "Content-Type": "application/json",
+            },
+            method: "POST",
+            body: JSON.stringify(data),
+        })
+        .then(async (res) => {
+            const data = await res.json();
+            if(res.ok) {
+                setIsSent(true)
+            } else {
+                throw new Error(`Server responded with an error ${data.message}`)
+            }
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+    };
 
-    return (
-        <div id="contactUs" className="contact-us">
+    const contactForm = () => {
+        return (
+            <div id="contactUs" className="contact-us">
+
             <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
 
                 <input 
@@ -39,10 +64,19 @@ const ContactUs = () => {
 
             </form>
 
-
         </div>
-                
+        )
+    }
+
+ const sentSucces = () => {
+    return (
+        <div id="contactUs" className="contact-us">
+           <div className="contact-succes"> We have receved your message! </div>
+        </div>
     )
+ }
+
+ return <>{!isSent ? contactForm() : sentSucces()}</>;
 }
 
 export default ContactUs

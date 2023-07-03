@@ -1,0 +1,53 @@
+{
+  "hash": "5626c14d",
+  "browserHash": "7ee535ca",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "004936b7",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "8f3c7400",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "236145bd",
+      "needsInterop": false
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/index.js",
+      "file": "react-router.js",
+      "fileHash": "79564432",
+      "needsInterop": false
+    },
+    "react-hook-form": {
+      "src": "../../node_modules/react-hook-form/dist/index.esm.mjs",
+      "file": "react-hook-form.js",
+      "fileHash": "0f92a7e8",
+      "needsInterop": false
+    },
+    "react-burger-menu": {
+      "src": "../../node_modules/react-burger-menu/lib/BurgerMenu.js",
+      "file": "react-burger-menu.js",
+      "fileHash": "c25d639b",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-6KNYQMAO": {
+      "file": "chunk-6KNYQMAO.js"
+    },
+    "chunk-SRAQOA3L": {
+      "file": "chunk-SRAQOA3L.js"
+    },
+    "chunk-QSQYAWSL": {
+      "file": "chunk-QSQYAWSL.js"
+    }
+  }
+}

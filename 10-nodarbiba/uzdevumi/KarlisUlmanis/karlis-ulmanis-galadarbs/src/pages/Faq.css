@@ -4,5 +4,16 @@
         width: auto;
         height: auto;
         align-items: center;
+        font-size: 28px;
+        padding: 0 200px 0 200px;
+        text-align: center;
+        margin: 80px 0px 80px 0px;
         /* text-align: center; */
+}
+
+@media screen and (max-width: 768px) {
+        .faq {
+                font-size: 22px;
+                padding: 0 10px 0 10px;        
+        }
 }

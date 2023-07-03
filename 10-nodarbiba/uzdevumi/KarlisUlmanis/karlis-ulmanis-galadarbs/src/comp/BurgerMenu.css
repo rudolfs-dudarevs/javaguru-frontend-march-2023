@@ -1,6 +1,6 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: fixed;
+    position: sticky;
     width: 25px;
     height: 18px;
     right: 36px;
@@ -19,6 +19,7 @@
   
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
+    left: 235px;
     height: 24px;
     width: 24px;
   }
@@ -26,7 +27,7 @@
   /* Color/shape of close button cross */
   .bm-cross {
     background: var(--grey);
-    right: 25px;
+    /* right: 25px; */
   }
   
   .bm-cross:hover {

@@ -50,6 +50,13 @@ textarea {
 
 }
 
+.contact-succes {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: var(--white);
+}
+
 @media screen and (max-width: 768px) {
     .contact-us {
         background-image: none;
