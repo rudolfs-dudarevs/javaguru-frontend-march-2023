@@ -27,7 +27,7 @@ const Footer = () => {
           <img src={Instagram} className="media-icon" />
         </Link>
       </div>
-      <p className="copyright">Copyright 2020 Bella Olonje.com</p>
+      <p className="copyright">Copyright 2020 BellaOlonje.com</p>
     </footer>
   );
 };
