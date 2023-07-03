@@ -7,8 +7,9 @@ import ProductImage from "../../assets/product-display.png";
 const ProductDisplay = () => {
   return (
     <div className="product-display">
-      <img src={PhoneLeft} className="phone-left" />
-      <img src={PhoneRight} className="phone-right" />
+      {/* <img src={PhoneLeft} className="phone-left" />
+      <img src={PhoneRight} className="phone-right" /> */}
+      <img src={ProductImage} className="product-image" />
     </div>
   );
 };

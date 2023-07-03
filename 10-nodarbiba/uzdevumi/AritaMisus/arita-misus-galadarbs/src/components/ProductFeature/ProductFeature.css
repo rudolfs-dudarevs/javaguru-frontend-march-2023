@@ -7,12 +7,8 @@
 }
 
 .feature-image {
-  width: 80%;
-  margin-bottom: 20px;
-
-  /* Product image placeholders until correct images are available */
-  border: 2px solid red;
-  border-radius: 15px;
+  max-width: 97%;
+  /* margin-bottom: 20px; */
 }
 
 .feature-content {
@@ -58,6 +54,9 @@
   .feature-image {
     max-width: 269px;
     margin-bottom: 0;
+
+    border: 5px dotted rgb(235, 235, 235);
+    border-radius: 15px;
   }
 
   .feature-content {
