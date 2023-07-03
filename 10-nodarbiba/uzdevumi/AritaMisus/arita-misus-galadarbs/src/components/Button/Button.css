@@ -1,10 +1,8 @@
 .btn-primary,
 .btn-secondary {
-  color: var(--white);
   border-radius: 35px;
   width: 236px;
   padding: 16px 0;
-  /* display: inline; */
 
   font-size: 1.5rem;
   font-weight: 700;
@@ -19,7 +17,7 @@
 .btn-primary {
   color: white;
   background-color: var(--orange);
-  border: 1px solid var(--orange);
+  border: 2px solid var(--orange);
 }
 
 .btn-primary:hover,
@@ -31,18 +29,28 @@
 .btn-secondary {
   color: var(--orange);
   background-color: transparent;
-  border: 1px solid var(--orange);
+  border: 2px solid var(--orange);
 }
 
 .btn-secondary:hover,
 .btn-secondary:active,
 .btn-secondary:focus {
-  background-color: var(--darkgrey);
+  background-color: var(--darkblue);
+  color: var(--white);
+  border: 2px solid var(--darkblue);
 }
 
 @media only screen and (min-width: 768px) {
   .btn-secondary {
     color: var(--white);
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:active,
+  .btn-secondary:focus {
+    background-color: var(--white);
+    color: var(--orange);
+    border: 2px solid var(--orange);
   }
 }

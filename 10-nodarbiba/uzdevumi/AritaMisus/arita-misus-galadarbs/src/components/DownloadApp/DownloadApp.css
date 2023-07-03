@@ -57,7 +57,15 @@
 
 .download-app .btn-secondary {
   color: var(--white);
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
+}
+
+.download-app .btn-secondary:hover,
+.download-app .btn-secondary:focus,
+.download-app .btn-secondary:active {
+  color: var(--orange);
+  background-color: var(--white);
+  border: 2px solid var(--orange);
 }
 
 /* Styles for Desktop */
@@ -90,7 +98,6 @@
 
   .download-app p.hero-text {
     margin: 0 0 0px 0;
-    /* height: 38px; */
     max-width: 840px;
 
     font-size: 1.5rem;
