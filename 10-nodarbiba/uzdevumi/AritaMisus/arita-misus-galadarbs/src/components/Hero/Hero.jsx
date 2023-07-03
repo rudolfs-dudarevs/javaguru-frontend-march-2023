@@ -7,9 +7,9 @@ const Hero = () => {
     <div className="hero">
       <h3 className="hero-title">Food app</h3>
       <h1 className="hero-title">
-        Why stay hungry when you can order from Bella Onojie
+        Why stay hungry when you can order from Bella Olonje
       </h1>
-      <p className="hero-text">Download the bella onoje's food app now on</p>
+      <p className="hero-text">Download the bella olonje's food app now on</p>
       <div className="buttons">
         <Button text="Playstore" isPrimary />
         <Button text="App store" />
