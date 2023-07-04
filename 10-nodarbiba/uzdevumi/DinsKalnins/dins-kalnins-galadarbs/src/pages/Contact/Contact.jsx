@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import Button from "../../components/ContactUs/ContactUs";
-import "/Users/macbookpro/Documents/Documents - Dins MacBook Pro/repository/javaguru-frontend-march-2023/10-nodarbiba/uzdevumi/DinsKalnins/dins-kalnins-galadarbs/src/components/ContactUs/ContactUs.css";
-
+import "../../pages/Contact/Contact.css";
 const ContactUs = () => {
   const {
     register,
