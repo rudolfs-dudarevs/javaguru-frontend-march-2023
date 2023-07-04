@@ -39,33 +39,37 @@ const ContactUs = () => {
 
   const contactForm = () => {
     return (
-      <form className="contact-us__form" onSubmit={handleSubmit(onSubmit)}>
-        <input
-          className="contact-us__input"
-          placeholder="John Doe"
-          {...register("name", { required: true })}
-        />
-        {errors.name && (
-          <span className="contact-us__error">This field is required</span>
-        )}
-        <input
-          className="contact-us__input"
-          placeholder="john.doe@mail.com"
-          {...register("email", { required: true })}
-        />
-        {errors.email && (
-          <span className="contact-us__error">This field is required</span>
-        )}
-        <textarea
-          className="contact-us__input-area"
-          {...register("message", { required: true })}
-        />
-        {errors.message && (
-          <span className="contact-us__error">This field is required</span>
-        )}
+      <div className="contact-us__wrapper">
+        <form className="contact-us__form" onSubmit={handleSubmit(onSubmit)}>
+          <h2 className="contact-us__title">Contact us</h2>
+          <input
+            className="contact-us__input"
+            placeholder="Hungry Joe"
+            {...register("name", { required: true })}
+          />
+          {errors.name && (
+            <span className="contact-us__error">This field is required</span>
+          )}
+          <input
+            className="contact-us__input"
+            placeholder="joe@feed.me"
+            {...register("email", { required: true })}
+          />
+          {errors.email && (
+            <span className="contact-us__error">This field is required</span>
+          )}
+          <textarea
+            className="contact-us__input-area"
+            placeholder="Hello..."
+            {...register("message", { required: true })}
+          />
+          {errors.message && (
+            <span className="contact-us__error">This field is required</span>
+          )}
 
-        <Button isPrimary type="submit" text="Send" />
-      </form>
+          <Button isPrimary type="submit" text="Send" />
+        </form>
+      </div>
     );
   };
 

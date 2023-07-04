@@ -8,4 +8,7 @@
   /* button hover */
   --darkorange: #db4008;
   --whitesmoke: var(--whitesmoke);
+
+  /* Not found page */
+  --grey-bg: rgb(209, 209, 209);
 }

@@ -12,6 +12,8 @@
   box-sizing: border-box;
   margin: 8px 23px;
   max-height: 68px;
+
+  cursor: pointer;
 }
 
 .btn-primary {
