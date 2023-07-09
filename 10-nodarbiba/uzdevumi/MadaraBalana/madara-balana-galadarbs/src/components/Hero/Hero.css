@@ -1,0 +1,64 @@
+.hero {
+    margin-top: 156px;
+    text-align: center;
+    height: 619px;
+    width: 100%;
+    background-image: url("../../assets/fona_attels.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_title {
+    font-size: 58px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    padding: 40px;
+    line-height: 70px;
+}
+
+.hero_food {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    padding-top: 75px;
+}
+
+.hero_subtitle {
+    font-size: 24px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+
+.hero {
+    background-image: none;
+    background-color:var(--white);
+  }
+
+.hero_title {
+    font-size: 30px;
+    line-height: normal;
+    padding: 20px;
+    color: var(--dark_grey);
+}
+
+.hero_food {
+    font-size: 16px;
+    color: var(--light_grey);
+    padding-top: 48px;
+}
+
+.hero_subtitle {
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--light_grey);
+    padding: 0, 80px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
