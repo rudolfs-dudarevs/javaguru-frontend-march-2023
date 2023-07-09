@@ -1,9 +1,7 @@
 import React from "react";
-import Header from "../../components/Header/Header.jsx";
 import Hero from "../../components/Hero/Hero.jsx";
 import HowTheAppWorks from "../../components/HowTheAppWorks/HowTheAppWorks.jsx";
 import ContactUs from "../../components/ContactUs/ContactUs.jsx"
-import Footer from "../../components/Footer/Footer.jsx";
 import Order from "../../components/Order/Order.jsx"
 import Image1 from "../../assets/image1.png";
 import Image2 from "../../assets/image2.png";
@@ -13,7 +11,6 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="sections">
-      <Header />
       <Hero />
       <HowTheAppWorks />
       <Order

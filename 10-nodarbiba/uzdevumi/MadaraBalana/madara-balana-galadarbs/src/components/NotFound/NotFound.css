@@ -1,0 +1,17 @@
+.not-found {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.not-found__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    color: var(--primary);
+    text-shadow: var(--dark_grey) 1px 0 5px;
+    font-size: 48px;
+}

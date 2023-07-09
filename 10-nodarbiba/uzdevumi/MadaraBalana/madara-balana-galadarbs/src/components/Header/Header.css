@@ -45,4 +45,12 @@
 .header_navigation {
     display: none;
   }
+
+  .logo {
+    position: fixed;
+    width: 104px;
+    height: 51.37px;
+    top: 26px;
+    left: 26px;
+  }  
 }

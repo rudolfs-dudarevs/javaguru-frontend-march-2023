@@ -1,3 +1,12 @@
+.navigation {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .bm-item {
   color: var(--dark_grey);
 }
@@ -5,10 +14,10 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 80px;
+    width: 30px;
+    height: 20px;
+    right: 30px;
+    top: 45px;
   }
   
 /* Color/shape of burger icon bars */

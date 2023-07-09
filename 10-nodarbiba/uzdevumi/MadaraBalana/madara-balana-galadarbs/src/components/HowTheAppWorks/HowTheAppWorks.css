@@ -2,20 +2,23 @@
   position: relative;
   display: flex;
   justify-content: center;
-  transform: translateY(-250px);
 }
 
 .phone_left {
   position: absolute;
-  transform: translateX(-130px);
+  transform: translate(-130px, -150px);
   z-index: 2;
 }
 
 .phone_right {
   position: absolute;
-  transform: translate(75px, 200px);
+  transform: translate(75px, -100px);
   height: 531px;
   z-index: 1;
+}
+
+.phones {
+  display: none;
 }
 
 .how_app_works__bottom {
@@ -42,8 +45,21 @@
 }
 
 @media screen and (max-width: 768px) {
+  .phone_left, .phone_right  {
+    display: none;
+  }
+  
+  .phones {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    z-index: 1;
+  }
+  
   .how_app_works__bottom {
     flex-direction: column-reverse;
+    margin-top: 50px;
+    }
   }
   
   .how_app_works__text {
@@ -57,4 +73,3 @@
     width: 100%;
     background-color: var(--foggy);
   }
-}
