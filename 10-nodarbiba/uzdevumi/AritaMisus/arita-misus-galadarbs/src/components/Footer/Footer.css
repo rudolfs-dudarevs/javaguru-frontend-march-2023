@@ -1,7 +1,6 @@
 /* Style for Mobile */
 
 .footer {
-  /* position: fixed; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +14,7 @@
 /* Logo */
 
 footer .logo {
-  width: 246px;
+  width: 75px;
   height: auto;
   margin-left: 0;
 }
@@ -50,11 +49,15 @@ footer .desktop-only {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 155px;
+    height: 90px;
   }
 
   footer .logo {
-    width: 206px;
+    width: 90px;
+  }
+
+  .media-icon-wrapper {
+    margin: 0;
   }
 
   footer .desktop-only {

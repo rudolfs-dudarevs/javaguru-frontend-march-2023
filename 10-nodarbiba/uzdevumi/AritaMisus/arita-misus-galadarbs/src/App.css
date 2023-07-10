@@ -2,12 +2,12 @@
 @import "../style/reset.css";
 @import "../style/colors.css";
 
-/* #root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-*/ * {
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+* {
   box-sizing: border-box;
 }
 
