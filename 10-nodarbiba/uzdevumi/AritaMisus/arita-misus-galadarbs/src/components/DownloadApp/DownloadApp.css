@@ -26,7 +26,7 @@
 }
 
 .download-app p.hero-text {
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
   max-width: 305px;
   font-size: 1.45rem;
   line-height: 2.25rem;
@@ -94,11 +94,12 @@
   }
 
   .download-app p.hero-text {
-    margin: 0 0 0px 0;
-    max-width: 840px;
+    margin: 0;
+    /* max-width: 840px; */
+    max-width: 90%;
 
     font-size: 1.5rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 500;
     color: #f6f6f6;
   }
