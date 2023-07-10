@@ -4,7 +4,7 @@
   width: 236px;
   padding: 16px 0;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 2.25rem;
   text-align: center;
@@ -25,7 +25,8 @@
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: var(--darkorange);
+  background-color: var(--red);
+  border: 2px solid var(--red);
 }
 
 .btn-secondary {
@@ -53,6 +54,6 @@
   .btn-secondary:focus {
     background-color: var(--white);
     color: var(--orange);
-    border: 2px solid var(--orange);
+    border: 2px solid var(--white);
   }
 }

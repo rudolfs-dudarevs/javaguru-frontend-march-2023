@@ -1,5 +1,6 @@
 :root {
   --orange: #fa4a0c;
+  --red: #e70a05;
   --white: #ffffff;
   --darkblue: #252b42;
   --darkgrey: #5c5c5c;
@@ -7,7 +8,7 @@
 
   /* button hover */
   --darkorange: #db4008;
-  --whitesmoke: var(--whitesmoke);
+  --whitesmoke: whitesmoke;
 
   /* Not found page */
   --grey-bg: rgb(209, 209, 209);
