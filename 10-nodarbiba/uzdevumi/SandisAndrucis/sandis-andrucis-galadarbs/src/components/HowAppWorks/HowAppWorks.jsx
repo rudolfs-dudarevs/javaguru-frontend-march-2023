@@ -1,5 +1,5 @@
 import "./HowAppWorks.css";
-import phones from "../../assets/Phones.png";
+import phones from "../../assets/test.png";
 
 const HowAppWorks = () => {
     return (

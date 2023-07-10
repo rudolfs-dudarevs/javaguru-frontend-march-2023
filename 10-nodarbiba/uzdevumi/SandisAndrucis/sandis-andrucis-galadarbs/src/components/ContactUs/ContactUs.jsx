@@ -54,7 +54,9 @@ const ContactUs = () => {
 
     const sentSuccess = () => {
         return (
-            <div className="contact-us__sent-success">We have received your message</div>
+            <div className="contact-us__sent-success">
+                <div className="contact-us__sent-success--text">We have received your message</div>
+            </div>
         );
     };
 

@@ -48,11 +48,11 @@
 
 @media only screen and (min-width:768px) {
     .header {
-        height: 155px;
+        height: 130px;
     }
     
     .header__hidden {
-        top:-155px;
+        top:-130px;
     }
 
     .header__logo {
