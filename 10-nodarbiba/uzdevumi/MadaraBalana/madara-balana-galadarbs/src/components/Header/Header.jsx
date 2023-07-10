@@ -7,19 +7,25 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <div>
-        <Link to="/">
-          <img src={Logo} alt="Logo" className="logo" />
-        </Link>
+      <Link to="/">
+        <img src={Logo} alt="Logo" className="logo" />
+      </Link>
       <div className="menu">
-          <BurgerMenu />
+        <BurgerMenu />
       </div>
-        <div className="header_navigation">
-          <Link className="header_link" to="/">Home</Link>
-          <Link className="header_link" to="/product">Product</Link>
-          <Link className="header_link" to="/faq">Faq</Link>
-          <Link className="header_link" to="/contact">Contact</Link>
-        </div>
+      <div className="header_navigation">
+        <Link className="header_link" to="/">
+          Home
+        </Link>
+        <Link className="header_link" to="/product">
+          Product
+        </Link>
+        <Link className="header_link" to="/faq">
+          Faq
+        </Link>
+        <Link className="header_link" to="/contact">
+          Contact
+        </Link>
       </div>
     </header>
   );

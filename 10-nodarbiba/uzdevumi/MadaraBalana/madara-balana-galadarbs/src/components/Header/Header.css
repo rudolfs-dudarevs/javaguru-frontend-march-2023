@@ -1,25 +1,26 @@
 .header {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   height: 155px;
   width: 100%;
+  padding: 0 75px;
   background-color: var(--white);
   z-index: 50;
 }
 
 .logo {
-  position: fixed;
   width: 205px;
-  height: 102px;
-  top: 26px;
-  left: 70px;
+  /* top: 26px; */
+  /* left: 70px; */
 }
 
 .header_navigation {
-  position: fixed;
   font-size: 21px;
-  top: 78px;
-  right: 25px;
+  /* top: 78px; */
+  /* right: 25px; */
 }
 
 .header_link {
@@ -32,25 +33,22 @@
 }
 
 @media screen and (min-width: 768px) {
-.menu {
+  .menu {
     display: none;
   }
 
-.header_navigation {
+  .header_navigation {
     display: block;
   }
 }
 
 @media screen and (max-width: 768px) {
-.header_navigation {
+  .header_navigation {
     display: none;
   }
 
   .logo {
     position: fixed;
-    width: 104px;
     height: 51.37px;
-    top: 26px;
-    left: 26px;
-  }  
+  }
 }

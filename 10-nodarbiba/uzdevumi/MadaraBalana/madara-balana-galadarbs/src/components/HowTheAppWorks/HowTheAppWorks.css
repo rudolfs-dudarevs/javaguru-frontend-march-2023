@@ -1,18 +1,15 @@
 .how_app_works__pics {
-  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .phone_left {
-  position: absolute;
-  transform: translate(-130px, -150px);
+  transform: translate(35px, -150px);
   z-index: 2;
 }
 
 .phone_right {
-  position: absolute;
-  transform: translate(75px, -100px);
+  transform: translate(-170px, -100px);
   height: 531px;
   z-index: 1;
 }
@@ -26,7 +23,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 600px;
 }
 
 .how_app_works__line {
@@ -45,31 +41,32 @@
 }
 
 @media screen and (max-width: 768px) {
-  .phone_left, .phone_right  {
+  .phone_left,
+  .phone_right {
     display: none;
   }
-  
+
   .phones {
     display: flex;
     justify-content: center;
     height: 450px;
     z-index: 1;
   }
-  
+
   .how_app_works__bottom {
     flex-direction: column-reverse;
     margin-top: 50px;
-    }
   }
-  
-  .how_app_works__text {
-    font-size: 30px;
-    font-style:normal;
-    margin-bottom: 50px;
-  }
+}
 
-  .how_app_works__line {
-    height: 1px;
-    width: 100%;
-    background-color: var(--foggy);
-  }
+.how_app_works__text {
+  font-size: 30px;
+  font-style: normal;
+  margin-bottom: 50px;
+}
+
+.how_app_works__line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--foggy);
+}
