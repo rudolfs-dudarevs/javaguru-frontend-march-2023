@@ -1,6 +1,6 @@
 import React from "react";
 import GuestLayout from "./layouts/GuestLayout/GuestLayout";
-import Home from "./components/Home/Home";
+import Home from "./pages/Home/Home";
 import Faq from "./pages/Faq/Faq";
 import Contact from "./pages/Contact/Contact";
 import Product from "./pages/Product/Product";
@@ -12,8 +12,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<GuestLayout />}>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />

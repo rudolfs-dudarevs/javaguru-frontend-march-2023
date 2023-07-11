@@ -4,8 +4,6 @@
 .btn-secondary {
   width: 170px;
   height: 45px;
-  margin-right: 50px;
-  margin-top: 80px;
   display: inline-block;
   border-radius: 10px;
   color: var(--white);
@@ -15,7 +13,6 @@
   cursor: pointer;
   background-color: transparent;
   border: 2px solid var(--secondary);
-  font-family: "Montserrat", sans-serif;
 }
 
 .btn-primary,
