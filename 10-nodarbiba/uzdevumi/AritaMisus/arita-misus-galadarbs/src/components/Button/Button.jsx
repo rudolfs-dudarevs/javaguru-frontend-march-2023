@@ -1,10 +1,13 @@
 import React from "react";
-import "./Button.css";
+import "./Button.scss";
 
 const Button = ({ text, isPrimary, type }) => {
   return (
-    <div className="button-container" type={type}>
-      <button className={isPrimary ? "btn-primary" : "btn-secondary"}>
+    <div className="button-container">
+      <button
+        className={isPrimary ? "btn-primary" : "btn-secondary"}
+        type={type}
+      >
         {text}
       </button>
     </div>

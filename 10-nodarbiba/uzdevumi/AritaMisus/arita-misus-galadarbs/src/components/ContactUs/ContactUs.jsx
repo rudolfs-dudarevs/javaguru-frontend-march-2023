@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Button from "../Button/Button";
-import "./ContactUs.css";
+import "./ContactUs.scss";
 
 const ContactUs = () => {
   const [isSent, setIsSent] = useState(false);

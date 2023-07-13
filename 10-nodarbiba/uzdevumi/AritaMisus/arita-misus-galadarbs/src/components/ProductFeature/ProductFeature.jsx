@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./ProductFeature.css";
+import "./ProductFeature.scss";
 
 const ProductFeature = ({ keepOrder, featureImage, preTitle, title, text }) => {
   const [isDesktop, setIsDesktop] = useState(false);

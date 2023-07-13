@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductDisplay.css";
+import "./ProductDisplay.scss";
 import ProductImage from "../../assets/phones.png";
 
 const ProductDisplay = () => {

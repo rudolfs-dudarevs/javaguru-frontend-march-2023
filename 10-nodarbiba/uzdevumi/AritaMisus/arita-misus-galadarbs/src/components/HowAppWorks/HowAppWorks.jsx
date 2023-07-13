@@ -1,5 +1,5 @@
 import React from "react";
-import "./HowAppWorks.css";
+import "./HowAppWorks.scss";
 import ProductDisplay from "../ProductDisplay/ProductDisplay";
 import ProductFeature from "../ProductFeature/ProductFeature";
 import Feature1 from "../../assets/feature-1.png";

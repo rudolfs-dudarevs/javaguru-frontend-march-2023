@@ -1,5 +1,5 @@
 import React from "react";
-import "./DownloadApp.css";
+import "./DownloadApp.scss";
 import Button from "../Button/Button";
 
 const DownloadApp = () => {

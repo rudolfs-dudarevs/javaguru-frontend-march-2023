@@ -20,40 +20,40 @@
   color: white;
   background-color: var(--orange);
   border: 2px solid var(--orange);
-}
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: var(--red);
-  border: 2px solid var(--red);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+  }
 }
 
 .btn-secondary {
   color: var(--orange);
   background-color: transparent;
   border: 2px solid var(--orange);
-}
 
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:focus {
-  background-color: var(--darkblue);
-  color: var(--white);
-  border: 2px solid var(--darkblue);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--darkblue);
+    color: var(--white);
+    border: 2px solid var(--darkblue);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .btn-secondary {
     color: var(--white);
     border: 2px solid var(--white);
-  }
 
-  .btn-secondary:hover,
-  .btn-secondary:active,
-  .btn-secondary:focus {
-    background-color: var(--white);
-    color: var(--orange);
-    border: 2px solid var(--white);
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--white);
+      color: var(--orange);
+      border: 2px solid var(--white);
+    }
   }
 }
