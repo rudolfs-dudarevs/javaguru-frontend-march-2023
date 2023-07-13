@@ -1,7 +1,9 @@
-@import "../../index.css";
+@use "../../_variables.scss";
+@use "../../_mixins.scss" as *;
+
 .DownloadWrapper {
   background-image: none;
-  background-color: var(--mobilebg);
+  background-color: variables.$mobilebg;
   padding-bottom: 7.5rem;
 }
 
@@ -9,12 +11,12 @@
   padding: 0 2rem;
   font-size: 40px;
   margin-top: 7.5rem;
-  color: var(--white);
+  color: variables.$white;
   top: 0;
 }
 
 .DownloadWrapper h4 {
-  color: var(--mobiletext);
+  color: variables.$mobiletext;
 }
 
 .DButtonWrapper {
@@ -25,25 +27,27 @@
 .download-primary {
   margin-top: 2rem;
   font-size: 16px;
-  background-color: var(--orange);
+  background-color: variables.$orange;
   border-radius: 10px;
   padding: 18px 31px;
   gap: 10px;
-  color: var(--white);
+  color: variables.$white;
   border: none;
+  cursor: pointer;
 }
 
 .download-secondary {
   margin-top: 2rem;
-  border: 2px solid var(--white);
-  color: var(--white);
+  border: 2px solid variables.$white;
+  color: variables.$white;
   border-radius: 10px;
   padding: 18px 31px;
   background-color: transparent;
   font-size: 16px;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@include for-size(tablet) {
   .DownloadWrapper {
     display: flex;
     flex-direction: column;
@@ -60,7 +64,7 @@
     top: 0;
   }
   .DownloadWrapper h4 {
-    color: var(--white);
+    color: variables.$white;
   }
 
   button.button-primary,

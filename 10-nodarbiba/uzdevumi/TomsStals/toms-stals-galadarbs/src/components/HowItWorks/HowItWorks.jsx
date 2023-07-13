@@ -1,10 +1,10 @@
-import "./HowItWorks.css";
+import "./HowItWorks.scss";
 import Phones from "../../assets/phones.png";
 
 const HowItWorks = () => {
   return (
     <>
-      <div className="WorksWrapper">
+      <div id="works" className="WorksWrapper">
         <img className="phones" src={Phones} alt="phones" />
       </div>
       <div className="HeadlineWrapper">

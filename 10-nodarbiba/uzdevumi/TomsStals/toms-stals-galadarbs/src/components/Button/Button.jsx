@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./Button.css";
+import "./Button.scss";
 
 // eslint-disable-next-line react/prop-types
 const Button = ({ label, variant }) => {

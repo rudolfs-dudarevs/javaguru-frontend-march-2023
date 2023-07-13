@@ -2,7 +2,7 @@ import Logo from "../../assets/logo.png";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { HashLink as Link } from "react-router-hash-link";
 
-import "./Header.css";
+import "./Header.scss";
 
 const Header = () => {
   return (
@@ -12,9 +12,9 @@ const Header = () => {
           <img className="Logo" src={Logo} />
         </Link>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/">Product</Link>
-          <Link to="/">Faq</Link>
+          <Link to="/#hero">Home</Link>
+          <Link to="/#works">How it Works</Link>
+          <Link to="/#download">Download</Link>
           <Link to="/#contact">Contact</Link>
         </nav>
         <BurgerMenu />

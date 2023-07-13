@@ -1,4 +1,6 @@
-@import "../../index.css";
+@use "../../_variables.scss";
+@use "../../_mixins.scss" as *;
+
 .FooterWrapper {
   margin: 3rem 0rem;
 }
@@ -13,7 +15,7 @@
 
 .FooterWrapper p {
   font-size: 12px;
-  color: var(--footertext);
+  color: variables.$footertext;
 }
 
 .SocialWrapper img {
@@ -25,7 +27,7 @@
   width: 32px;
 }
 
-@media screen and (min-width: 768px) {
+@include for-size(tablet) {
   .FooterWrapper {
     display: flex;
     flex-direction: row;

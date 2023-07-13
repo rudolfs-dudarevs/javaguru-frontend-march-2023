@@ -1,4 +1,4 @@
-import "./Steps.css";
+import "./Steps.scss";
 import PropTypes from "prop-types";
 
 // eslint-disable-next-line react/prop-types

@@ -1,4 +1,5 @@
-@import "../../index.css";
+@use "../../_variables.scss";
+@use "../../_mixins.scss" as *;
 
 .WorksWrapper {
   height: 21rem;
@@ -17,13 +18,13 @@
 
 h2 {
   font-size: 24px;
-  color: var(--black);
+  color: variables.$black;
   padding-bottom: 2rem;
 }
 
 hr {
   width: 100%;
-  background-color: var(--lightgrey);
+  background-color: variables.$lightgrey;
   height: 2px;
   border: none;
   margin-bottom: 4rem;
@@ -31,7 +32,7 @@ hr {
 
 /*Tablet*/
 
-@media screen and (min-width: 768px) {
+@include for-size(tablet) {
   .WorksWrapper {
     height: 35rem;
   }
@@ -42,7 +43,7 @@ hr {
 }
 
 /*Desktop*/
-@media screen and (min-width: 992px) {
+@include for-size(desktop) {
   .WorksWrapper {
     height: 30rem;
   }
@@ -60,12 +61,12 @@ hr {
     position: relative;
     top: 150px;
     font-size: 44px;
-    color: var(--black);
+    color: variables.$black;
   }
 
   hr {
     width: 100%;
-    background-color: var(--lightgrey);
+    background-color: variables.$lightgrey;
     height: 2px;
     position: relative;
     border: none;

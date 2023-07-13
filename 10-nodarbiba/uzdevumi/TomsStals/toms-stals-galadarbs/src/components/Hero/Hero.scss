@@ -1,25 +1,26 @@
-@import "../../index.css";
+@use "../../_variables.scss";
+@use "../../_mixins.scss" as *;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300,500;600;700&display=swap");
 
 .HeroWrapper {
   margin-top: 6rem;
   padding-top: 3.125rem;
-  background-color: var(--herobg);
+  background-color: variables.$herobg;
   background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 38rem;
-  color: var(--white);
+  color: variables.$white;
 }
 h1 {
   padding: 0 1rem;
   line-height: 2.656rem;
-  color: var(--darkblue);
+  color: variables.$darkblue;
 }
 
 h3 {
-  color: var(--darkgrey);
+  color: variables.$darkgrey;
   font-size: 16px;
 }
 h4 {
@@ -27,7 +28,7 @@ h4 {
   margin-top: 1rem;
   font-weight: 500;
   font-size: 24px;
-  color: var(--darkgrey);
+  color: variables.$darkgrey;
 }
 
 .ButtonWrapper {
@@ -35,7 +36,7 @@ h4 {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@include for-size(tablet) {
   .HeroWrapper {
     max-width: 1440px;
     margin-top: 6rem;
@@ -44,7 +45,7 @@ h4 {
     background-size: cover;
     width: 100%;
     height: 38rem;
-    color: var(--white);
+    color: variables.$white;
   }
 
   .ButtonWrapper {
@@ -58,14 +59,14 @@ h4 {
     font-weight: 700;
     line-height: 80px;
     padding: 0 5rem;
-    color: var(--white);
+    color: variables.$white;
   }
   h3 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
     margin-top: 5.5rem;
-    color: var(--white);
+    color: variables.$white;
   }
 
   h4 {
@@ -73,6 +74,6 @@ h4 {
     font-size: 24px;
     line-height: 38px;
     font-weight: 300;
-    color: var(--white);
+    color: variables.$white;
   }
 }

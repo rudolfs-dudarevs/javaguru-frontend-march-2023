@@ -1,4 +1,6 @@
-@import "../../index.css";
+@use "../../_variables.scss";
+@use "../../_mixins.scss" as *;
+
 .ContactHeader {
   margin-top: 6rem;
   top: 0;
@@ -32,7 +34,7 @@
 }
 
 .contact-us__error {
-  color: var(--orange);
+  color: variables.$orange;
   align-self: flex-start;
 }
 
@@ -46,7 +48,7 @@
   padding: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@include for-size(tablet) {
   .contact-us__input,
   .contact-us__input-area {
     width: 400px;

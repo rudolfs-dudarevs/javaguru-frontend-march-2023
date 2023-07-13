@@ -1,11 +1,11 @@
-import "./Download.css";
+import "./Download.scss";
 import Button from "../Button/Button";
 
 const Download = () => {
   const mobileContent = window.innerWidth <= 768;
 
   return (
-    <div className="DownloadWrapper">
+    <div id="download" className="DownloadWrapper">
       <h2>Download the app now.</h2>
       {mobileContent ? (
         <h4>Most calendars are designed for teams.</h4>

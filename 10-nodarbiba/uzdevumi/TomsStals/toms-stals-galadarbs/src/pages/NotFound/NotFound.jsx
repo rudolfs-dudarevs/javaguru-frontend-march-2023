@@ -1,4 +1,4 @@
-import "./NotFound.css";
+import "./NotFound.scss";
 import Button from "../../components/Button/Button";
 
 const NotFound = () => {
