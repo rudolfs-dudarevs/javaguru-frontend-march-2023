@@ -3,15 +3,13 @@ import HowAppWorks from "../../components/HowAppWorks/HowAppWorks";
 import DownloadApp from "../../components/DownloadApp/DownloadApp";
 
 const Home = () => {
-  return (
-    <>
-      <main>
-        <Hero />
-        <HowAppWorks />
-        <DownloadApp />
-      </main>
-    </>
-  );
+ return (
+  <>
+   <Hero />
+   <HowAppWorks />
+   <DownloadApp />
+  </>
+ );
 };
 
 export default Home;
