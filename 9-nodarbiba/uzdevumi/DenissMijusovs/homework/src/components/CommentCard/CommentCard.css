@@ -1,16 +1,22 @@
-.post-card {
+.comment-card {
     font-size: 18px;;
     padding: 20px;
     border: 2px solid var(--black);
     border-radius: 4px;
 }
 
-.post-card__title {
+.comment-card__name {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.post-card__text {
+.comment-card__text {
     color: darkslategray;
+    margin-bottom: 10px;
+}
+
+.comment-card__email a {
+    text-decoration: none;
+    color: var(--primary);
 }
