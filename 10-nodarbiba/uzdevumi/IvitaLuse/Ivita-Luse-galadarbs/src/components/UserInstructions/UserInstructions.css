@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.instructions {
+  display: flex;
+  justify-content: center;
+}
+
+.instructions.reversed {
+  flex-direction: row-reverse;
+}
+
+.instructions__container {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instructions__h3 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  color: var(--primary);
+  letter-spacing: 0.1px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.instructions__h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 57px;
+  color: #252b42;
+  letter-spacing: 0.2px;
+  width: 75%;
+}
+
+.instructions__h4 {
+  margin-bottom: 40px;
+  width: 65%;
+  font-size: 18px;
+}
+
+.instructions__image {
+  margin-bottom: 60px;
+}
+
+.instructions__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+@media (min-width: 1200px) {
+  .instructions__order1 {
+    order: 1;
+  }
+
+  .instructions__order2 {
+    order: 2;
+  }
+
+  .instructions__order3 {
+    order: 3;
+  }
+
+  .instructions__order4 {
+    order: 4;
+  }
+
+  .instructions__order5 {
+    order: 5;
+  }
+
+  .instructions__order6 {
+    order: 6;
+  }
+
+  .instructions__image-container {
+    width: 40%;
+  }
+
+  .instructions__text {
+    text-align: center;
+    width: 45%;
+  }
+
+  .instructions__h3 {
+    margin-top: 150px;
+    margin-bottom: 17px;
+  }
+
+  .instructions__h2 {
+    margin-bottom: 27px;
+  }
+
+  .instructions__h4 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions__image-container {
+    width: auto;
+  }
+
+  .instructions__text {
+    text-align: center;
+    margin-top: -40px;
+    width: 80%;
+  }
+
+  .instructions__h3 {
+    margin-top: 150px;
+    margin-bottom: 17px;
+  }
+
+  .instructions__h2 {
+    margin-bottom: 27px;
+  }
+
+  .instructions__h4 {
+    margin-bottom: 0px;
+  }
+
+  .instructions__image {
+    margin-left: 100px;
+    margin-top: -20px;
+    margin-bottom: -180px;
+  }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.btn__btn-primary {
+  height: 50px;
+  border-radius: 10px;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 70px;
+  flex-grow: 0;
+  max-width: min-content;
+  cursor: pointer;
+  background-color: var(--primary);
+  border: solid var(--secondary) 2px;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+}

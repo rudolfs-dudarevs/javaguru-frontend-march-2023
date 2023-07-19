@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.how-app-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-app-works__text {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.how-app-works__phones {
+  transform: translateY(-170px);
+}
+
+.how-app-works__bottom {
+  width: 100%;
+  margin-top: -100px;
+}
+
+.how-app-works__hr {
+  order: 1;
+  width: 80%;
+  height: 2px;
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .how-app-works__text {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+
+  .how-app-works__hr {
+  }
+}
+
+@media (max-width: 480px) {
+  .how-app-works__text {
+    font-size: 24px;
+  }
+
+  .how-app-works__hr {
+  }
+}
