@@ -1,0 +1,83 @@
+.contact-us, .contact-us__input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us {
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-us__input-fields {
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.contact-us__title {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.contact-us__input, .contact-us__input-area {
+    width:300px;
+    font-size: 24px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.contact-us__input {
+    height:68px;
+    padding:0 30px;
+}
+
+.contact-us__error {
+    color: var(--primary);
+    align-self: start;
+}
+
+.contact-us__input-area {
+    height: 200px;
+    padding: 30px;
+}
+
+.contact-us__sent-success {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us__sent-success--text {
+    font-size:32px;
+    font-weight: 500;
+    padding: 50px;
+}
+
+@media only screen and (min-width:1200px) {
+    .contact-us,
+    .contact-us__sent-success {
+        background-image: url(../../assets/ContactUsBg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height:650px;
+    }
+
+    .contact-us__title {
+        color: var(--lightwhite);
+        font-size: 28px;
+    }
+
+    .contact-us__input, .contact-us__input-area {
+        width:450px;
+    }
+
+    .contact-us__sent-success--text {
+        color: var(--lightwhite);
+        font-weight: 500;
+        font-size:40px;
+    }
+}

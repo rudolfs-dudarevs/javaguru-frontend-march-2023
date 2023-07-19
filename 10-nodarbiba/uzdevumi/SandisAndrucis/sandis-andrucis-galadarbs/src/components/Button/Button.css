@@ -1,0 +1,56 @@
+.btn-primary, .btn-secondary {
+    width:236px;
+    height:68px;
+    border-radius: 30px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 36px;
+}
+
+.btn-primary {
+    background-color:var(--primary);
+    border: none;
+    color:var(--white);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border:solid var(--primary) 1px;
+    color:var(--primary);
+}
+
+.btn-primary:hover {
+    background-color:var(--darkblue);
+    color:var(--white);
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color:var(--darkblue);
+    color:var(--white);
+    cursor: pointer;
+    border:none;
+}
+
+@media only screen and (min-width:1200px) {
+    .btn-secondary {
+        border:solid var(--white) 1px;
+        color:var(--white);
+    }
+
+    .btn-primary:hover {
+        background-color:var(--white);
+        color:var(--primary);
+        cursor: pointer;
+        border:none;
+    }
+    
+    .btn-secondary:hover {
+        background-color:var(--white);
+        color:var(--primary);
+        cursor: pointer;
+        border:none;
+    }
+}

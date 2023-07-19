@@ -1,0 +1,18 @@
+.under-construction__main {
+    background-color: var(--white);
+    margin-top:112px;
+}
+
+.under-construction-pic {
+    background-image: url(../../assets/UnderConstruction.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media only screen and (min-width:1200px) {
+    .under-construction__main {
+        margin-top:155px;
+    }
+}
