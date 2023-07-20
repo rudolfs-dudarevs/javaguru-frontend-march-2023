@@ -3,17 +3,17 @@
 @import "../style/colors.css";
 
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
- font-size: 16px;
- overflow-x: hidden;
- scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
- font-family: "Montserrat", sans-serif;
- display: flex;
- flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
