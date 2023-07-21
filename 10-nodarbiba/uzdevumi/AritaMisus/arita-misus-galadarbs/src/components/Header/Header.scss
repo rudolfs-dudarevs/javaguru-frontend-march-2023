@@ -1,12 +1,22 @@
 /* Style for Mobile */
 
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 60px;
   box-sizing: border-box;
+  background-color: var(--white);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 2, 0.2, 1);
+  transition-duration: 500ms;
+
+  &.hide {
+    top: -70px;
+  }
 
   .logo {
     width: 75px;
